@@ -26,8 +26,12 @@ class txtManager:
 
             # Loop through the sentences and add them to the array
             for sentence in sentences:
-                print('[Get prompt] ' + str(i))
                 sentence_array.append(sentence.strip())
+                
+            sentence_array.pop()
+
+            for sentence in sentence_array:
+                print('[Get prompt] ' + str(i))
                 i = i + 1
 
         return sentence_array

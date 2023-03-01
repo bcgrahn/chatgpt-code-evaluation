@@ -19,28 +19,28 @@ class dbprovider:
             cursor.execute(f"DROP TABLE {tableName}")
             conn.commit()
         except:
-            print("not deleted")
+            print("[Table not deleted]")
 
-        # cursor.execute(f"SELECT COUNT(*) FROM MSysObjects WHERE Name='{tableName}' AND Type=1")
-        # result = cursor.fetchone()
-        
+
         cursor.execute("CREATE TABLE Data (ID INTEGER PRIMARY KEY, Prompt TEXT, Response TEXT, Evaluation TEXT)")
        
         i = 1
         
         for prompt, response, evaluation, in zip(prompts, responses, evaluations):
-            # Insert data into the table
-            print("[Write to db] " + str(i))
-            query = f"INSERT INTO Data (ID, Prompt, Response, Evaluation) VALUES ('{i}', '{prompt}', '{response}', '{evaluation}')"
-            i = i + 1
-            cursor.execute(query)
-        conn.commit()
 
-        # Fetch data from the table
-        # cursor.execute("SELECT * FROM Users")
-        # rows = cursor.fetchall()
-        # for row in rows:
-        #     print(row)
+            # response = f"\"{response}\""
+            # Insert data into the table
+            query = f"INSERT INTO Data (ID, Prompt, Response, Evaluation) VALUES ('{i}', '{prompt}', '{response}', '{evaluation}')"
+            
+            try:
+                cursor.execute(query)
+                print("[Write to db] " + str(i))
+            except pyodbc.ProgrammingError:
+                print("[Unable to write] " + str(i))
+
+            i = i + 1
+                
+            conn.commit()
 
         # Close the connection
         conn.close()

@@ -7,7 +7,7 @@ class PythonFile:
         for response in responses:
             # Define the file name and the code to be written to the file
 
-            filename = f"prompt{i}.py"
+            filename = f"response{i}.py"
             i = i + 1
 
             if os.path.exists(filename):
