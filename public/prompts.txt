@@ -1,0 +1,3 @@
+Code me a noughts and crosses game in python.
+Code me an effiecient sorting algorithm in python.
+Code me a binary sort tree in python.
