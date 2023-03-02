@@ -6,46 +6,36 @@ class Node:
         self.left = None
         self.right = None
   
-# A function to do inorder tree traversal 
+# Create root 
+def insert(root, node): 
+    if root is None: 
+        root = node 
+    else: 
+        if root.data < node.data: 
+            if root.right is None: 
+                root.right = node 
+            else: 
+                insert(root.right, node) 
+        else: 
+            if root.left is None: 
+                root.left = node 
+            else: 
+                insert(root.left, node) 
+
 def inorder(root): 
-  
-    if root is not None: 
+    if root: 
         inorder(root.left) 
         print(root.data) 
         inorder(root.right) 
-  
-# A function to insert a new node in the binary search tree 
-def insert( node, data): 
-  
-    # If the tree is empty, return a new node 
-    if node is None: 
-        return Node(data) 
-  
-    else: 
-        # Otherwise, recur down the tree 
-        if data <= node.data: 
-            node.left = insert(node.left, data) 
-        else: 
-            node.right = insert(node.right, data) 
-  
-        # return the (unchanged) node pointer 
-        return node 
-  
-# Driver program to test the above functions 
-# Let us create the following BST 
-#      50 
-#    /      \ 
-#   30     70 
-#   / \    / \ 
-#  20 40  60 80 
-root = None
-root = insert(root, 50) 
-insert(root, 30) 
-insert(root, 20) 
-insert(root, 40) 
-insert(root, 70) 
-insert(root, 60) 
-insert(root, 80) 
-  
+
+# Driver code 
+r = Node(50) 
+insert(r,Node(30)) 
+insert(r,Node(20)) 
+insert(r,Node(40)) 
+insert(r,Node(70)) 
+insert(r,Node(60)) 
+insert(r,Node(80)) 
+
 # Print inoder traversal of the BST 
-inorder(root)
+inorder(r)

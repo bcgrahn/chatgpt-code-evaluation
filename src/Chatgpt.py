@@ -1,10 +1,15 @@
 import openai
+import os
 
 class Chatgpt:
 
     def askGPT(prompt_):
+
+        #get api_key from enviroment variable
+        api_key = os.environ.get('CHATGPT_API')
+
         # Define OpenAI API key 
-        openai.api_key = "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"
+        openai.api_key = api_key
 
         # Set up the model and prompt
         model_engine = "text-davinci-003"

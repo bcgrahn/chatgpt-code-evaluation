@@ -3,6 +3,9 @@ from src.PythonFile import PythonFile
 from src.CodeEvaluation import CodeEvaluation
 from src.dbprovider import dbprovider
 from src.txtManager import txtManager
+from dotenv import load_dotenv
+
+load_dotenv()
 
 prompts = []
 responses = []
