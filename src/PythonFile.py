@@ -1,22 +1,19 @@
 import os
 
 class PythonFile:
-    def create(responses):
+    def create(responses, fileNames):
 
-        i = 1
-        for response in responses:
+        
+        for response, fileName in zip(responses, fileNames):
             # Define the file name and the code to be written to the file
 
-            filename = f"response{i}.py"
-            i = i + 1
-
-            if os.path.exists(filename):
-                os.remove(filename)
-                print("[Delete old file] " + filename)
+            if os.path.exists(fileName):
+                os.remove(fileName)
+                print("[Delete old file] " + fileName)
 
             # Create a new file and write the dummy code to it
-            with open(filename, "w") as f:
-                print("[create python file] " + filename)
+            with open(fileName, "w") as f:
+                print("[create python file] " + fileName)
                 f.write(response)
 
             # if os.path.isfile(file_name):

@@ -6,45 +6,46 @@ class Node:
         self.left = None
         self.right = None
   
-# Binary Search Tree  
-class BinarySearchTree: 
+# A function to do inorder tree traversal 
+def inorder(root): 
   
-    def __init__(self): 
-        self.root = None
+    if root is not None: 
+        inorder(root.left) 
+        print(root.data) 
+        inorder(root.right) 
   
-    def insert(self, data): 
-        if self.root is None: 
-            self.root = Node(data) 
+# A function to insert a new node in the binary search tree 
+def insert( node, data): 
+  
+    # If the tree is empty, return a new node 
+    if node is None: 
+        return Node(data) 
+  
+    else: 
+        # Otherwise, recur down the tree 
+        if data <= node.data: 
+            node.left = insert(node.left, data) 
         else: 
-            self._insert(data, self.root) 
+            node.right = insert(node.right, data) 
   
-    def _insert(self, data, cur_node): 
-        if data < cur_node.data: 
-            if cur_node.left is None: 
-                cur_node.left = Node(data) 
-            else: 
-                self._insert(data, cur_node.left) 
-        elif data > cur_node.data: 
-            if cur_node.right is None: 
-                cur_node.right = Node(data) 
-            else: 
-                self._insert(data, cur_node.right) 
-        else: 
-            print("Value already present in tree!") 
+        # return the (unchanged) node pointer 
+        return node 
   
-    def find(self, data): 
-        if self.root: 
-            is_found = self._find(data, self.root) 
-            if is_found: 
-                return True
-            return False
-        else: 
-            return None
+# Driver program to test the above functions 
+# Let us create the following BST 
+#      50 
+#    /      \ 
+#   30     70 
+#   / \    / \ 
+#  20 40  60 80 
+root = None
+root = insert(root, 50) 
+insert(root, 30) 
+insert(root, 20) 
+insert(root, 40) 
+insert(root, 70) 
+insert(root, 60) 
+insert(root, 80) 
   
-    def _find(self, data, cur_node): 
-        if data > cur_node.data and cur_node.right: 
-            return self._find(data, cur_node.right) 
-        elif data < cur_node.data and cur_node.left: 
-            return self._find(data, cur_node.left) 
-        if data == cur_node.data: 
-            return True
+# Print inoder traversal of the BST 
+inorder(root)
