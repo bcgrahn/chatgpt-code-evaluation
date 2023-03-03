@@ -18,15 +18,24 @@ class CodeEvaluation:
         pylint_stdout = ""
         # Run pylint on the file and capture the output
         for filename in fileNames:
-            file_path = os.path.join(folder_path, filename)
-            output = io.StringIO()
+
+            short_path = f'./public/ResponseFiles/{filename}'
+
+            file_path = os.path.join(os.getcwd(), short_path)
+
+            # Define the Pylint command-line arguments
+            args = [
+                #'--rcfile=pylintrc',  # Path to a Pylint configuration file
+                '--output-format=text',  # Output format (text or colorized)
+                file_path,  # Path to the Python file to evaluate
+            ]
+
             try:
                 print("\n[Lint evalutation] " + filename)
-                pylint_opts = ['--disable=missing-docstring']
-                temp = pylint.lint.Run(pylint_opts + [file_path])
+                pylint.lint.Run(args, do_exit=False).linter.stats
             except:
                 #print("[Unable to evaluate lint] " + filename)
-                print()
+                print("Error")
 
             evaluations.append(pylint_stdout)
         return evaluations

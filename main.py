@@ -10,7 +10,6 @@ load_dotenv()
 
 prompts = []
 responses = []
-evaluations = []
 fileNames = []
 
 prompts = txtManager.getPromptList()
@@ -19,8 +18,8 @@ i = 1
 for prompt in prompts:
     res = Chatgpt.askGPT(prompt)
     responses.append(res)
-    evaluations.append("dummy data")
-     
+    
+    #create file names for each response
     fileName = f"response{i}.py"
     fileNames.append(fileName)
     i = i + 1
