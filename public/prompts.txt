@@ -1,3 +1,2 @@
-Code me a noughts and crosses game in python.
-Code me an effiecient sorting algorithm in python.
-Code me a binary sort tree in python.
+Code me an algorithm that sorts the first 100 decimals of pi in ascending order with no print or return in python.
+write me a piece of code that adds 5 + 6 in python with no print or return.

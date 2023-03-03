@@ -5,6 +5,7 @@ from src.dbprovider import dbprovider
 from src.txtManager import txtManager
 from dotenv import load_dotenv
 
+
 load_dotenv()
 
 prompts = []
@@ -27,10 +28,16 @@ for prompt in prompts:
 txtManager.writeResponses(responses)
 
 PythonFile.create(responses, fileNames)
-evaluation_array = []
-evaluation_array = CodeEvaluation.evaluate(fileNames)
 
-dbprovider.start(prompts, responses, evaluation_array)
+lint_evaluations = []
+timeEvaluations = []
+breakdownEvaluations = []
+
+lint_evaluations = CodeEvaluation.evaluate(fileNames)
+breakdownEvaluations = CodeEvaluation.analyze_code(fileNames)
+timeEvaluations = CodeEvaluation.timeEvaluate(fileNames)
+
+dbprovider.start(prompts, responses, lint_evaluations)
 
 # txtManager.writeEvaluation()
 

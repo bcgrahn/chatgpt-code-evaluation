@@ -8,6 +8,3 @@ pi_list.append(3.141592653589793238462643383279502884197169399375105820974944592
 
 # Sort the list in ascending order
 pi_list.sort()
-
-
-5 + 6
