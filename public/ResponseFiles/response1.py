@@ -1,10 +1,14 @@
 
 
-# Create an empty list
-pi_list = []
+def binary_sort():
+    arr = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97]
+    length = len(arr)
 
-# Add the first 100 decimals of pi to the list
-pi_list.append(3.1415926535897932384626433832795028841971693993751058209749445923078164062862089986280348253421170679)
+    for i in range(length):
+        min_idx = i
+        for j in range(i+1, length):
+            if arr[min_idx] > arr[j]:
+                min_idx = j
+        arr[i], arr[min_idx] = arr[min_idx], arr[i]
 
-# Use the sort() method to sort the list in ascending order
-pi_list.sort()
+binary_sort()

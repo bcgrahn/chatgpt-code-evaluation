@@ -1,2 +1,4 @@
-Code me an algorithm that sorts the first 100 decimals of pi in ascending order with no print or return in python.
-write me a piece of code that adds 5 + 6 in python with no print or return.
+write me a binary sort in python that accepts no arguments, prints nothing and has no return.
+write me an example of complex python code with no prints or returns.
+write me another example of complex python code with no prints or returns.
+write me another example of complex python code conforming to python pep8 standards with no prints or returns.

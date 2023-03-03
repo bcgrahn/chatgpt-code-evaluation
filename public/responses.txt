@@ -1,13 +1,54 @@
 
 
-# Create an empty list
-pi_list = []
+def binary_sort():
+    arr = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97]
+    length = len(arr)
 
-# Add the first 100 decimals of pi to the list
-pi_list.append(3.1415926535897932384626433832795028841971693993751058209749445923078164062862089986280348253421170679)
+    for i in range(length):
+        min_idx = i
+        for j in range(i+1, length):
+            if arr[min_idx] > arr[j]:
+                min_idx = j
+        arr[i], arr[min_idx] = arr[min_idx], arr[i]
 
-# Use the sort() method to sort the list in ascending order
-pi_list.sort()
+binary_sort()
 
 
-5 + 6
+# This code example uses a recursive function to traverse a tree structure
+# and a helper function to find the maximum value in the tree
+
+def traverse_tree(tree, max_val):
+    if tree is None:
+        return max_val
+    max_val = max(max_val, tree.val)
+    max_val = traverse_tree(tree.left, max_val)
+    max_val = traverse_tree(tree.right, max_val)
+    return max_val
+
+def find_max_val(tree):
+    max_val = -float('inf')
+    return traverse_tree(tree, max_val)
+
+
+# This code takes a list of integers and returns a list of all the prime numbers in the original list
+
+def get_prime_numbers(nums):
+    prime_nums = []
+    for num in nums:
+        if num > 1:
+            for i in range(2, num):
+                if (num % i) == 0:
+                    break
+            else:
+                prime_nums.append(num)
+    return prime_nums
+
+
+def add_two_numbers(x, y):
+    """
+    Function to add two numbers
+    """
+    try:
+        return x + y
+    except TypeError:
+        raise TypeError("Inputs must be numeric")

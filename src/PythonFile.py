@@ -19,8 +19,4 @@ class PythonFile:
                 print("[create python file] " + fileName)
                 f.write(response)
 
-            # if os.path.isfile(file_name):
-            #     print(f"File {file_name} created successfully.")
-            # else:
-            #     print(f"Error: could not create {file_name}.")
                     
