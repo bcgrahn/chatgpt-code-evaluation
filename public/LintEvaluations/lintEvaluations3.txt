@@ -1,0 +1,7 @@
+************* Module response3
+public\ResponseFiles\response3.py:14:0: C0304: Final newline missing (missing-final-newline)
+public\ResponseFiles\response3.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+
+------------------------------------------------------------------
+Your code has been rated at 3.33/10 (previous run: 0.00/10, +3.33)
+

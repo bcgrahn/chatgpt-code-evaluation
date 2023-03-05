@@ -1,0 +1,9 @@
+************* Module response1
+public\ResponseFiles\response1.py:11:0: C0304: Final newline missing (missing-final-newline)
+public\ResponseFiles\response1.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+public\ResponseFiles\response1.py:3:0: C0116: Missing function or method docstring (missing-function-docstring)
+public\ResponseFiles\response1.py:5:4: C0103: Variable name "l" doesn't conform to snake_case naming style (invalid-name)
+
+------------------------------------------------------------------
+Your code has been rated at 5.00/10 (previous run: 0.00/10, +5.00)
+

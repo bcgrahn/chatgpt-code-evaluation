@@ -21,15 +21,23 @@ class CodeEvaluation:
         folder_path = "./public/ResponseFiles"
         pylint_stdout = ""
         # Run pylint on the file and capture the output
+        i = 1
         for filename in fileNames:
+
+            num = str(i)
 
             short_path = f'./public/ResponseFiles/{filename}'
 
             file_path = os.path.join(os.getcwd(), short_path)
 
+            output_path = f'--output=./public/LintEvaluations/lintEvaluations{num}.txt'
+            
+            i = i + 1
+
             # Define the Pylint command-line arguments
             args = [
                 #'--rcfile=pylintrc',  # Path to a Pylint configuration file
+                output_path,
                 '--output-format=text',  # Output format (text or colorized)
                 file_path,  # Path to the Python file to evaluate
             ]

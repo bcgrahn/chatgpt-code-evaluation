@@ -1,4 +1,4 @@
-write me a binary sort in python that accepts no arguments, prints nothing and has no return.
-write me an example of complex python code with no prints or returns.
-write me another example of complex python code with no prints or returns.
-write me another example of complex python code conforming to python pep8 standards with no prints or returns.
+write me a binary sort in python conforming to python pep 8 that accepts no arguments, prints nothing and has no return.
+write me an example of complex python code conforming to python pep 8 with no prints or returns.
+write me another example of complex python code conforming to python pep 8 with no prints or returns.
+write me another example of complex python code conforming to python pep 8 standards with no prints or returns.

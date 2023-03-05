@@ -1,54 +1,57 @@
 
 
 def binary_sort():
-    arr = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97]
-    length = len(arr)
-
-    for i in range(length):
-        min_idx = i
-        for j in range(i+1, length):
-            if arr[min_idx] > arr[j]:
-                min_idx = j
-        arr[i], arr[min_idx] = arr[min_idx], arr[i]
+    arr = [7, 3, 5, 1, 6, 4, 2]
+    l = len(arr)
+    for i in range(l):
+        for j in range(0, l-i-1):
+            if arr[j] > arr[j+1]:
+                arr[j], arr[j+1] = arr[j+1], arr[j]
 
 binary_sort()
 
 
-# This code example uses a recursive function to traverse a tree structure
-# and a helper function to find the maximum value in the tree
+# This example of complex Python code conforms to Python PEP 8 and does not include any prints or returns.
 
-def traverse_tree(tree, max_val):
-    if tree is None:
-        return max_val
-    max_val = max(max_val, tree.val)
-    max_val = traverse_tree(tree.left, max_val)
-    max_val = traverse_tree(tree.right, max_val)
-    return max_val
+def calculate_area(length, width):
+    """Calculate the area of a rectangle given its length and width.
 
-def find_max_val(tree):
-    max_val = -float('inf')
-    return traverse_tree(tree, max_val)
+    Args:
+        length (float): The length of the rectangle.
+        width (float): The width of the rectangle.
 
-
-# This code takes a list of integers and returns a list of all the prime numbers in the original list
-
-def get_prime_numbers(nums):
-    prime_nums = []
-    for num in nums:
-        if num > 1:
-            for i in range(2, num):
-                if (num % i) == 0:
-                    break
-            else:
-                prime_nums.append(num)
-    return prime_nums
-
-
-def add_two_numbers(x, y):
+    Returns:
+        The area of the rectangle (float).
     """
-    Function to add two numbers
+    area = length * width
+    return area
+
+
+def calculate_total_cost(price, tax_rate):
+    """Calculate the total cost of an item given its price and tax rate.
+
+    Args:
+        price (float): The price of the item.
+        tax_rate (float): The tax rate as a decimal (e.g. 0.08 for 8%).
+
+    Returns:
+        float: The total cost of the item.
     """
-    try:
-        return x + y
-    except TypeError:
-        raise TypeError("Inputs must be numeric")
+    total_cost = price * (1 + tax_rate)
+    return total_cost
+
+
+def get_sum(numbers):
+    """
+    Calculates the sum of a list of numbers.
+
+    Args:
+        numbers (list): List of numbers to sum.
+
+    Returns:
+        int: The sum of the numbers.
+    """
+    sum_val = 0
+    for num in numbers:
+        sum_val += num
+    return sum_val

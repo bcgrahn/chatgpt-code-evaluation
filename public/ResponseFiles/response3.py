@@ -1,14 +1,14 @@
 
 
-# This code takes a list of integers and returns a list of all the prime numbers in the original list
+def calculate_total_cost(price, tax_rate):
+    """Calculate the total cost of an item given its price and tax rate.
 
-def get_prime_numbers(nums):
-    prime_nums = []
-    for num in nums:
-        if num > 1:
-            for i in range(2, num):
-                if (num % i) == 0:
-                    break
-            else:
-                prime_nums.append(num)
-    return prime_nums
+    Args:
+        price (float): The price of the item.
+        tax_rate (float): The tax rate as a decimal (e.g. 0.08 for 8%).
+
+    Returns:
+        float: The total cost of the item.
+    """
+    total_cost = price * (1 + tax_rate)
+    return total_cost
