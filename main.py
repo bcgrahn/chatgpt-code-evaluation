@@ -22,12 +22,13 @@ prompts = txtManager.getPromptList()
 responses = Chatgpt.askGPT(prompts)
 
 #generate generic filename
-i = 1
+i = 0
 for prompt in prompts:
+    i = i + 1
     #create file names for each response
     fileName = f"response{i}.py"
     fileNames.append(fileName)
-    i = i + 1
+    
 
 #write responses to txt file
 txtManager.writeResponses(responses)
@@ -35,7 +36,8 @@ txtManager.writeResponses(responses)
 PythonFile.create(responses, fileNames)
 
 #Evaluate python pep* conformaty
-lint_evaluations = CodeEvaluation.evaluateLint(fileNames)
+CodeEvaluation.evaluateLint(fileNames)
+lint_evaluations = txtManager.getEvaluationList(i)
 timeEvaluations = CodeEvaluation.timeEvaluate(fileNames)
 #breakdownEvaluations = CodeEvaluation.analyze_code(fileNames)
 #timeComplexities = CodeEvaluation.timeComplexity(fileNames)

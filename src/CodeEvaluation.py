@@ -19,7 +19,6 @@ class CodeEvaluation:
     def evaluateLint(fileNames):
         evaluations = []
         folder_path = "./public/ResponseFiles"
-        pylint_stdout = ""
         # Run pylint on the file and capture the output
         i = 1
         for filename in fileNames:
@@ -38,19 +37,16 @@ class CodeEvaluation:
             args = [
                 #'--rcfile=pylintrc',  # Path to a Pylint configuration file
                 output_path,
-                '--output-format=text',  # Output format (text or colorized)
+                '--msg-template={msg_id}: {category}: {line:3d},{column}: {obj}: {msg} ',  # Output format (text or colorized)
                 file_path,  # Path to the Python file to evaluate
             ]
 
             try:
                 print("\n[Lint evalutation] " + filename)
-                pylint.lint.Run(args, do_exit=False).linter.stats
+                pylint.lint.Run(args)
             except:
                 #print("[Unable to evaluate lint] " + filename)
-                print("Error")
-
-            evaluations.append(pylint_stdout)
-        return evaluations
+                print('')
     
     def complexity(fileNames):
         complexEvaluations = []
