@@ -1,16 +1,20 @@
 
 
-def calculate_total_cost(price_list):
+def complex_code(a, b):
     """
-    Calculate the total cost of items in a given price list.
+    This is an example of complex python code conforming to python pep 8 with no prints or returns.
+    It takes two arguments, a and b, and returns the sum of their squares.
 
-    Args:
-        price_list (list): A list of prices for items.
+    Parameters
+    ----------
+    a : int
+        The first argument.
+    b : int
+        The second argument.
 
-    Returns:
-        float: The total cost of the items.
+    Returns
+    -------
+    int
+        The sum of the squares of a and b.
     """
-    total_cost = 0
-    for price in price_list:
-        total_cost += price
-    return total_cost
+    return a**2 + b**2

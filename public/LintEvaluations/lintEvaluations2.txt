@@ -1,7 +1,24 @@
 ************* Module response2
-C0304: convention:  17,0: : Final newline missing 
+C0303: convention:   5,25: : Trailing whitespace 
+C0303: convention:   6,47: : Trailing whitespace 
+C0303: convention:   8,29: : Trailing whitespace 
+C0303: convention:   9,24: : Trailing whitespace 
+C0303: convention:  10,17: : Trailing whitespace 
+C0303: convention:  11,24: : Trailing whitespace 
+C0303: convention:  12,23: : Trailing whitespace 
+C0303: convention:  13,25: : Trailing whitespace 
+C0303: convention:  14,44: : Trailing whitespace 
+C0303: convention:  15,53: : Trailing whitespace 
+C0303: convention:  16,27: : Trailing whitespace 
+C0303: convention:  18,26: : Trailing whitespace 
+C0303: convention:  19,38: : Trailing whitespace 
+C0304: convention:  20,0: : Final newline missing 
 C0114: convention:   1,0: : Missing module docstring 
+C0116: convention:   5,0: permutations: Missing function or method docstring 
+W0621: warning:   5,17: permutations: Redefining name 'string' from outer scope (line 19) 
+C0116: convention:   8,0: get_permutations: Missing function or method docstring 
+W0621: warning:   8,21: get_permutations: Redefining name 'string' from outer scope (line 19) 
 
 ------------------------------------------------------------------
-Your code has been rated at 7.78/10 (previous run: 6.00/10, +1.78)
+Your code has been rated at 0.00/10 (previous run: 0.00/10, +0.00)
 

@@ -1,7 +1,23 @@
 ************* Module response4
-C0304: convention:  17,0: : Final newline missing 
+C0303: convention:  10,0: : Trailing whitespace 
+C0303: convention:  13,0: : Trailing whitespace 
+C0303: convention:  16,0: : Trailing whitespace 
+C0303: convention:  19,0: : Trailing whitespace 
+C0303: convention:  22,0: : Trailing whitespace 
+C0303: convention:  25,0: : Trailing whitespace 
+C0304: convention:  27,0: : Final newline missing 
 C0114: convention:   1,0: : Missing module docstring 
+C0103: convention:   3,17: complex_code: Argument name "a" doesn't conform to snake_case naming style 
+C0103: convention:   3,20: complex_code: Argument name "b" doesn't conform to snake_case naming style 
+C0103: convention:   3,23: complex_code: Argument name "c" doesn't conform to snake_case naming style 
+W0612: warning:   9,4: complex_code: Unused variable 'sum_of_parameters' 
+W0612: warning:  12,4: complex_code: Unused variable 'product_of_parameters' 
+W0612: warning:  15,4: complex_code: Unused variable 'average_of_parameters' 
+W0612: warning:  18,4: complex_code: Unused variable 'difference_of_parameters' 
+W0612: warning:  21,4: complex_code: Unused variable 'quotient_of_parameters' 
+W0612: warning:  24,4: complex_code: Unused variable 'remainder_of_parameters' 
+W0612: warning:  27,4: complex_code: Unused variable 'power_of_parameters' 
 
 ------------------------------------------------------------------
-Your code has been rated at 8.18/10 (previous run: 5.33/10, +2.85)
+Your code has been rated at 0.00/10 (previous run: 3.33/10, -3.33)
 

@@ -1,8 +1,9 @@
 ************* Module response1
-C0304: convention:  11,0: : Final newline missing 
+C0304: convention:  17,0: : Final newline missing 
 C0114: convention:   1,0: : Missing module docstring 
 C0116: convention:   3,0: binary_sort: Missing function or method docstring 
+R1723: refactor:   9,8: binary_sort: Unnecessary "elif" after "break", remove the leading "el" from "elif" 
 
 ------------------------------------------------------------------
-Your code has been rated at 6.25/10 (previous run: 0.00/10, +6.25)
+Your code has been rated at 6.92/10 (previous run: 7.00/10, -0.08)
 

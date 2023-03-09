@@ -1,17 +1,20 @@
 
 
-def complex_code(input_list):
-    """
-    This function takes an input list and performs a complex operation on it.
-    """
-    output_list = []
+import itertools
 
-    for item in input_list:
-        if isinstance(item, int):
-            output_list.append(item * 2)
-        elif isinstance(item, str):
-            output_list.append(item[::-1])
-        else:
-            output_list.append(item)
+def permutations(string): 
+    return list(itertools.permutations(string)) 
 
-    return output_list
+def get_permutations(string): 
+    if len(string) == 0: 
+        return [] 
+    if len(string) == 1: 
+        return [string] 
+    permutation_list = [] 
+    for permutation in permutations(string): 
+        permutation_list.append(''.join(permutation)) 
+    return permutation_list 
+
+if __name__ == "__main__": 
+    string = input("Enter a string: ") 
+    print(get_permutations(string))

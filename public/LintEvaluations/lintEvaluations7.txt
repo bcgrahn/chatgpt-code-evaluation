@@ -1,0 +1,9 @@
+************* Module response7
+C0304: convention:   4,0: : Final newline missing 
+C0114: convention:   1,0: : Missing module docstring 
+C0116: convention:   3,0: format_number: Missing function or method docstring 
+C0209: convention:   4,11: format_number: Formatting a regular string which could be a f-string 
+
+------------------------------------------------------------------
+Your code has been rated at 0.00/10 (previous run: 5.00/10, -5.00)
+

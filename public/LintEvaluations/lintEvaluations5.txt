@@ -1,0 +1,14 @@
+************* Module response5
+W0311: warning:   4,0: : Bad indentation. Found 2 spaces, expected 4 
+W0311: warning:   5,0: : Bad indentation. Found 2 spaces, expected 4 
+W0311: warning:   6,0: : Bad indentation. Found 4 spaces, expected 8 
+W0311: warning:   7,0: : Bad indentation. Found 6 spaces, expected 12 
+C0304: convention:   8,0: : Final newline missing 
+W0311: warning:   8,0: : Bad indentation. Found 2 spaces, expected 4 
+C0114: convention:   1,0: : Missing module docstring 
+C0116: convention:   3,0: capital_indexes: Missing function or method docstring 
+C0200: convention:   5,2: capital_indexes: Consider using enumerate instead of iterating with range and len 
+
+------------------------------------------------------------------
+Your code has been rated at 0.00/10 (previous run: 0.00/10, +0.00)
+

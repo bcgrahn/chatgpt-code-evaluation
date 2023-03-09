@@ -1,11 +1,17 @@
 
 
 def binary_sort():
-    list_to_sort = [5, 2, 4, 6, 1, 3]
-    list_length = len(list_to_sort)
-    for i in range(list_length):
-        for j in range(0, list_length-i-1):
-            if list_to_sort[j] > list_to_sort[j+1] :
-                list_to_sort[j], list_to_sort[j+1] = list_to_sort[j+1], list_to_sort[j]
+    numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    low = 0
+    high = len(numbers) - 1
+    while low <= high:
+        mid = (low + high) // 2
+        if numbers[mid] == 5:
+            break
+        elif numbers[mid] < 5:
+            low = mid + 1
+        else:
+            high = mid - 1
+    numbers.sort()
 
 binary_sort()

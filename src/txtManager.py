@@ -20,7 +20,7 @@ class txtManager:
 
             i = 1
             # Split the file content into sentences using a period as the delimiter
-            sentences = file_content.split('.')
+            sentences = file_content.split('@')
 
             # Create an empty array to store the sentences
             sentence_array = []

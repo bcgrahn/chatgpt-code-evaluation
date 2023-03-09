@@ -1,4 +1,20 @@
-write me a binary sort in python conforming to python pep 8 that accepts no arguments, prints nothing and has no return.
-write me an example of complex python code conforming to python pep 8 with no prints or returns.
-write me another example of complex python code conforming to python pep 8 with no prints or returns.
-write me another example of complex python code conforming to python pep 8 standards with no prints or returns.
+write me a binary sort in python conforming to python pep 8 that accepts no arguments, prints nothing and has no return@
+
+write me an example of complex python code conforming to python pep 8 with no prints or returns@
+
+write me another example of complex python code conforming to python pep 8 with no prints or returns@
+
+write me another example of complex python code conforming to python pep 8 standards with no prints or returns@
+
+Write a function named capital_indexes. The function takes a single parameter, which is a string. Your function should return a list of all the indexes in the string that have capital letters
+For example, calling capital_indexes("HeLlO") should return the list [0, 2, 4]@
+
+A string is a palindrome when it is the same when read backwards.
+For example, the string "bob" is a palindrome. So is "abba". But the string "abcd" is not a palindrome, because "abcd" != "dcba".
+Write a function named palindrome that takes a single string as its parameter. Your function should return True if the string is a palindrome, and False otherwise@
+
+Write a function named format_number that takes a non-negative number as its only parameter.
+Your function should convert the number to a string and add commas as a thousands separator.
+For example, calling format_number(1000000) should return "1,000,000"@
+
+write me a really complicated python script over 100 lines long@
