@@ -1,9 +1,10 @@
 ************* Module response3
-C0304: convention:  20,0: : Final newline missing 
+C0304: convention:   4,0: : Final newline missing 
+W0311: warning:   4,0: : Bad indentation. Found 2 spaces, expected 4 
 C0114: convention:   1,0: : Missing module docstring 
-C0103: convention:   3,17: complex_code: Argument name "a" doesn't conform to snake_case naming style 
-C0103: convention:   3,20: complex_code: Argument name "b" doesn't conform to snake_case naming style 
+C0116: convention:   3,0: all_equal: Missing function or method docstring 
+W0622: warning:   3,14: all_equal: Redefining built-in 'list' 
 
 ------------------------------------------------------------------
-Your code has been rated at 0.00/10 (previous run: 5.00/10, -5.00)
+Your code has been rated at 0.00/10 (previous run: 0.00/10, +0.00)
 

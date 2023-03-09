@@ -1,33 +1,9 @@
 ************* Module response8
-C0301: convention:  32,0: : Line too long (153/100) 
-C0301: convention:  40,0: : Line too long (125/100) 
-C0301: convention:  44,0: : Line too long (179/100) 
-C0301: convention:  48,0: : Line too long (231/100) 
-C0301: convention:  52,0: : Line too long (283/100) 
-C0301: convention:  55,0: : Line too long (113/100) 
-C0301: convention:  56,0: : Line too long (339/100) 
-C0301: convention:  59,0: : Line too long (131/100) 
-C0301: convention:  60,0: : Line too long (393/100) 
-C0304: convention:  62,0: : Final newline missing 
+C0304: convention:  14,0: : Final newline missing 
 C0114: convention:   1,0: : Missing module docstring 
-C0116: convention:  11,0: random_string: Missing function or method docstring 
-C0116: convention:  15,0: random_int_array: Missing function or method docstring 
-C0116: convention:  19,0: random_float_array: Missing function or method docstring 
-C0116: convention:  23,0: random_boolean_array: Missing function or method docstring 
-C0116: convention:  27,0: random_string_array: Missing function or method docstring 
-C0116: convention:  31,0: random_object_array: Missing function or method docstring 
-C0116: convention:  35,0: random_2d_array: Missing function or method docstring 
-C0116: convention:  39,0: random_3d_array: Missing function or method docstring 
-C0116: convention:  43,0: random_4d_array: Missing function or method docstring 
-C0116: convention:  47,0: random_5d_array: Missing function or method docstring 
-C0116: convention:  51,0: random_6d_array: Missing function or method docstring 
-R0913: refactor:  51,0: random_6d_array: Too many arguments (6/5) 
-C0116: convention:  55,0: random_7d_array: Missing function or method docstring 
-R0913: refactor:  55,0: random_7d_array: Too many arguments (7/5) 
-C0116: convention:  59,0: random_8d_array: Missing function or method docstring 
-R0913: refactor:  59,0: random_8d_array: Too many arguments (8/5) 
-W0611: warning:   7,0: : Unused import time 
+C0116: convention:   3,0: format_number: Missing function or method docstring 
+R1705: refactor:   6,4: format_number: Unnecessary "else" after "return", remove the "else" and de-indent the code inside it 
 
 ------------------------------------------------------------------
-Your code has been rated at 0.34/10 (previous run: 5.00/10, -4.66)
+Your code has been rated at 6.36/10 (previous run: 0.34/10, +6.02)
 

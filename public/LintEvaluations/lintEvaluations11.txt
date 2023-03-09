@@ -1,0 +1,13 @@
+************* Module response11
+C0303: convention:   4,41: : Trailing whitespace 
+C0325: convention:  40,0: : Unnecessary parens after 'if' keyword 
+C0304: convention:  61,0: : Final newline missing 
+C0114: convention:   1,0: : Missing module docstring 
+C0116: convention:  21,0: encrypt: Missing function or method docstring 
+W0621: warning:  21,12: encrypt: Redefining name 'message' from outer scope (line 57) 
+C0116: convention:  33,0: decrypt: Missing function or method docstring 
+W0621: warning:  33,12: decrypt: Redefining name 'message' from outer scope (line 57) 
+
+-----------------------------------
+Your code has been rated at 7.14/10
+

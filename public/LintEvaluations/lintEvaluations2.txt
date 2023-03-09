@@ -1,23 +1,16 @@
 ************* Module response2
-C0303: convention:   5,25: : Trailing whitespace 
-C0303: convention:   6,47: : Trailing whitespace 
-C0303: convention:   8,29: : Trailing whitespace 
-C0303: convention:   9,24: : Trailing whitespace 
-C0303: convention:  10,17: : Trailing whitespace 
-C0303: convention:  11,24: : Trailing whitespace 
-C0303: convention:  12,23: : Trailing whitespace 
-C0303: convention:  13,25: : Trailing whitespace 
-C0303: convention:  14,44: : Trailing whitespace 
-C0303: convention:  15,53: : Trailing whitespace 
-C0303: convention:  16,27: : Trailing whitespace 
-C0303: convention:  18,26: : Trailing whitespace 
-C0303: convention:  19,38: : Trailing whitespace 
-C0304: convention:  20,0: : Final newline missing 
+W0311: warning:   4,0: : Bad indentation. Found 2 spaces, expected 4 
+W0311: warning:   5,0: : Bad indentation. Found 4 spaces, expected 8 
+W0311: warning:   6,0: : Bad indentation. Found 2 spaces, expected 4 
+C0304: convention:   7,0: : Final newline missing 
+W0311: warning:   7,0: : Bad indentation. Found 4 spaces, expected 8 
 C0114: convention:   1,0: : Missing module docstring 
-C0116: convention:   5,0: permutations: Missing function or method docstring 
-W0621: warning:   5,17: permutations: Redefining name 'string' from outer scope (line 19) 
-C0116: convention:   8,0: get_permutations: Missing function or method docstring 
-W0621: warning:   8,21: get_permutations: Redefining name 'string' from outer scope (line 19) 
+C0116: convention:   3,0: triple_and: Missing function or method docstring 
+C0103: convention:   3,15: triple_and: Argument name "a" doesn't conform to snake_case naming style 
+C0103: convention:   3,18: triple_and: Argument name "b" doesn't conform to snake_case naming style 
+C0103: convention:   3,21: triple_and: Argument name "c" doesn't conform to snake_case naming style 
+R1703: refactor:   4,2: triple_and: The if statement can be replaced with 'return bool(test)' 
+R1705: refactor:   4,2: triple_and: Unnecessary "else" after "return", remove the "else" and de-indent the code inside it 
 
 ------------------------------------------------------------------
 Your code has been rated at 0.00/10 (previous run: 0.00/10, +0.00)

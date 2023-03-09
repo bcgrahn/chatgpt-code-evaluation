@@ -1,0 +1,8 @@
+************* Module response15
+C0304: convention:   7,0: : Final newline missing 
+C0114: convention:   1,0: : Missing module docstring 
+C0116: convention:   3,0: convert_decimal_to_hex: Missing function or method docstring 
+
+-----------------------------------
+Your code has been rated at 4.00/10
+

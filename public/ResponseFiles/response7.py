@@ -1,4 +1,8 @@
+.
 
-
-def format_number(number):
-    return '{:,}'.format(number)
+def palindrome(string):
+  reversed_string = string[::-1]
+  if string == reversed_string:
+    return True
+  else:
+    return False

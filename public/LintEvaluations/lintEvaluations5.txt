@@ -1,13 +1,25 @@
 ************* Module response5
-W0311: warning:   4,0: : Bad indentation. Found 2 spaces, expected 4 
-W0311: warning:   5,0: : Bad indentation. Found 2 spaces, expected 4 
-W0311: warning:   6,0: : Bad indentation. Found 4 spaces, expected 8 
-W0311: warning:   7,0: : Bad indentation. Found 6 spaces, expected 12 
-C0304: convention:   8,0: : Final newline missing 
-W0311: warning:   8,0: : Bad indentation. Found 2 spaces, expected 4 
+C0303: convention:   3,20: : Trailing whitespace 
+C0303: convention:   4,19: : Trailing whitespace 
+C0303: convention:   6,9: : Trailing whitespace 
+C0303: convention:   7,25: : Trailing whitespace 
+C0303: convention:   8,40: : Trailing whitespace 
+C0303: convention:   9,13: : Trailing whitespace 
+C0303: convention:  11,0: : Trailing whitespace 
+C0303: convention:  12,13: : Trailing whitespace 
+C0303: convention:  14,21: : Trailing whitespace 
+C0303: convention:  15,0: : Trailing whitespace 
+C0303: convention:  16,7: : Trailing whitespace 
+C0303: convention:  17,16: : Trailing whitespace 
+C0303: convention:  18,5: : Trailing whitespace 
+C0304: convention:  19,0: : Final newline missing 
 C0114: convention:   1,0: : Missing module docstring 
-C0116: convention:   3,0: capital_indexes: Missing function or method docstring 
-C0200: convention:   5,2: capital_indexes: Consider using enumerate instead of iterating with range and len 
+C0116: convention:   3,0: isPalindrome: Missing function or method docstring 
+C0103: convention:   3,0: isPalindrome: Function name "isPalindrome" doesn't conform to snake_case naming style 
+C0103: convention:   3,17: isPalindrome: Argument name "S" doesn't conform to snake_case naming style 
+W0621: warning:   3,17: isPalindrome: Redefining name 'S' from outer scope (line 13) 
+R1705: refactor:   4,4: isPalindrome: Unnecessary "else" after "return", remove the "else" and de-indent the code inside it 
+R1705: refactor:   7,8: isPalindrome: Unnecessary "else" after "return", remove the "else" and de-indent the code inside it 
 
 ------------------------------------------------------------------
 Your code has been rated at 0.00/10 (previous run: 0.00/10, +0.00)

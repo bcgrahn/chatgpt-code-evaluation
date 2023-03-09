@@ -1,0 +1,15 @@
+************* Module response12
+C0303: convention:   6,0: : Trailing whitespace 
+C0303: convention:   9,0: : Trailing whitespace 
+C0304: convention:  14,0: : Final newline missing 
+C0114: convention:   1,0: : Missing module docstring 
+C0116: convention:   3,0: detect_13th_Friday: Missing function or method docstring 
+C0103: convention:   3,0: detect_13th_Friday: Function name "detect_13th_Friday" doesn't conform to snake_case naming style 
+E0602: error:   5,11: detect_13th_Friday: Undefined variable 'datetime' 
+E0602: error:   8,24: detect_13th_Friday: Undefined variable 'datetime' 
+R1703: refactor:  11,4: detect_13th_Friday: The if statement can be replaced with 'return bool(test)' 
+R1705: refactor:  11,4: detect_13th_Friday: Unnecessary "else" after "return", remove the "else" and de-indent the code inside it 
+
+-----------------------------------
+Your code has been rated at 0.00/10
+

@@ -1,9 +1,9 @@
 ************* Module response1
-C0304: convention:  17,0: : Final newline missing 
+C0304: convention:   4,0: : Final newline missing 
 C0114: convention:   1,0: : Missing module docstring 
-C0116: convention:   3,0: binary_sort: Missing function or method docstring 
-R1723: refactor:   9,8: binary_sort: Unnecessary "elif" after "break", remove the leading "el" from "elif" 
+C0116: convention:   3,0: format_number: Missing function or method docstring 
+C0209: convention:   4,11: format_number: Formatting a regular string which could be a f-string 
 
 ------------------------------------------------------------------
-Your code has been rated at 6.92/10 (previous run: 7.00/10, -0.08)
+Your code has been rated at 0.00/10 (previous run: 6.92/10, -6.92)
 

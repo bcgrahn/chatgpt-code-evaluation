@@ -1,0 +1,10 @@
+************* Module response16
+C0304: convention:  14,0: : Final newline missing 
+C0114: convention:   1,0: : Missing module docstring 
+C0116: convention:   5,0: is_valid_regex: Missing function or method docstring 
+C0103: convention:   5,19: is_valid_regex: Argument name "S" doesn't conform to snake_case naming style 
+W0621: warning:   5,19: is_valid_regex: Redefining name 'S' from outer scope (line 13) 
+
+-----------------------------------
+Your code has been rated at 4.44/10
+

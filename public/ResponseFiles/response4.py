@@ -1,27 +1,24 @@
 
 
-def complex_code(a, b, c):
-    """
-    This is a complex python code example that conforms to PEP 8 standards.
-    It takes 3 parameters and does not print or return anything.
-    """
-    # Calculate the sum of the parameters
-    sum_of_parameters = a + b + c
-    
-    # Calculate the product of the parameters
-    product_of_parameters = a * b * c
-    
-    # Calculate the average of the parameters
-    average_of_parameters = (a + b + c) / 3
-    
-    # Calculate the difference of the parameters
-    difference_of_parameters = a - b - c
-    
-    # Calculate the quotient of the parameters
-    quotient_of_parameters = a / b / c
-    
-    # Calculate the remainder of the parameters
-    remainder_of_parameters = a % b % c
-    
-    # Calculate the power of the parameters
-    power_of_parameters = a**b**c
+def check_loop(head):
+  # Set two pointers, slow and fast
+  slow = fast = head
+  # Move fast pointer by two nodes
+  fast = fast.next
+  if fast:
+    fast = fast.next
+  # Move slow pointer by one node
+  slow = slow.next
+  # If the two pointers meet, then there is a loop
+  while slow != fast:
+    # Move fast pointer by two nodes
+    fast = fast.next
+    if fast:
+      fast = fast.next
+    # Move slow pointer by one node
+    slow = slow.next
+    # If the two pointers meet, then there is a loop
+    if slow == fast:
+      return True
+  # If the fast pointer reaches the end, then there is no loop
+  return False
