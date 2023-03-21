@@ -1,0 +1,25 @@
+Number: 10 Error: C0304 Final newline missing
+Number: 11 Error: C0114 Missing module docstring
+Number: 1 Error: C0103 Module name "response1(3)" doesn't conform to snake_case naming style
+Number: 22 Error: 
+
+Number: 11 Error: ------------------------------------------------------------------
+
+Number: 2 Error: E0001 Parsing failed
+Number: 1 Error: C0103 Module name "response3(3)" doesn't conform to snake_case naming style
+Number: 1 Error: C0103 Module name "response5(3)" doesn't conform to snake_case naming style
+Number: 1 Error: C0305 Trailing newlines
+Number: 1 Error: C0103 Module name "response6(3)" doesn't conform to snake_case naming style
+Number: 1 Error: C0103 Module name "response7(3)" doesn't conform to snake_case naming style
+Number: 1 Error: C0103 Module name "response8(3)" doesn't conform to snake_case naming style
+Number: 1 Error: C0103 Module name "response9(3)" doesn't conform to snake_case naming style
+Number: 1 Error: C0103 Module name "response10(3)" doesn't conform to snake_case naming style
+Number: 1 Error: C0415 Import outside toplevel (datetime.date)
+Number: 1 Error: C0103 Module name "response11(3)" doesn't conform to snake_case naming style
+Number: 1 Error: C0301 Line too long (106/100)
+Number: 2 Error: C0303 Trailing whitespace
+Number: 1 Error: C0103 Module name "response12(3)" doesn't conform to snake_case naming style
+Number: 1 Error: C0103 Module name "response13(3)" doesn't conform to snake_case naming style
+
+---------------------
+Overall rating: 3.1376923076923076

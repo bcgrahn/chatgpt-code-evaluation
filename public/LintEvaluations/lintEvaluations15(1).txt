@@ -1,0 +1,22 @@
+************* Module response15(1)
+C0303 Trailing whitespace: convention:   3,9: :
+C0303 Trailing whitespace: convention:   5,22: :
+C0303 Trailing whitespace: convention:   6,8: :
+C0303 Trailing whitespace: convention:   7,21: :
+C0303 Trailing whitespace: convention:   8,19: :
+C0303 Trailing whitespace: convention:   9,20: :
+C0303 Trailing whitespace: convention:  12,13: :
+C0303 Trailing whitespace: convention:  15,21: :
+C0303 Trailing whitespace: convention:  16,24: :
+C0303 Trailing whitespace: convention:  17,5: :
+C0304 Final newline missing: convention:  18,0: :
+C0114 Missing module docstring: convention:   1,0: :
+C0103 Module name "response15(1)" doesn't conform to snake_case naming style: convention:   1,0: :
+C0116 Missing function or method docstring: convention:   5,0: is_valid_regex:
+C0103 Argument name "s" doesn't conform to snake_case naming style: convention:   5,19: is_valid_regex:
+W0621 Redefining name 's' from outer scope (line 13): warning:   5,19: is_valid_regex:
+C0103 Constant name "s" doesn't conform to UPPER_CASE naming style: convention:  13,0: :
+
+------------------------------------------------------------------
+Your code has been rated at 0.00/10 (previous run: 0.00/10, +0.00)
+

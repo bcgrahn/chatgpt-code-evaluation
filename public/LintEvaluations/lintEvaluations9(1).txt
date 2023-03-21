@@ -1,0 +1,9 @@
+************* Module response9(1)
+C0304 Final newline missing: convention:  55,0: :
+C0114 Missing module docstring: convention:   1,0: :
+C0103 Module name "response9(1)" doesn't conform to snake_case naming style: convention:   1,0: :
+C0116 Missing function or method docstring: convention:  48,0: morse_translator:
+
+------------------------------------------------------------------
+Your code has been rated at 5.00/10 (previous run: 0.00/10, +5.00)
+

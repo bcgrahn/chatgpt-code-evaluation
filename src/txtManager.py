@@ -2,15 +2,26 @@ import os
 
 class txtManager:
 
-    def writeResponses(responses):
+    def writeResponses(responses, type):
         i = 1
-        # Loop through the elements of the array and write them to the file
+        # Loop through the elements of the array and write them each to their own txt file
         for response in responses:
-            path = f'./public/ResponseFiles/responses{i}.txt'
+            path = f'./public/ResponseFiles/responses{i}({type}).txt'
             with open(path, "w") as file:
                 print("[Write Response] " + str(i))
                 file.write(response + "\n")
             i = i + 1
+            
+    def writePrompts(prompts, type):
+        i = 1
+        # Loop through the elements of the array and write them each to their own txt file
+        for prompt in prompts:
+            path = f'./public/Prompts/prompt{i}({type}).txt'
+            with open(path, "w") as file:
+                print("[Write prompt] " + str(i))
+                file.write(prompt)
+            i = i + 1
+
 
     def getPromptList():
         # Open the file in read mode
@@ -19,7 +30,7 @@ class txtManager:
             file_content = file.read()
 
             i = 1
-            # Split the file content into sentences using a period as the delimiter
+            # Split the file content into sentences using @ as the delimiter
             sentences = file_content.split('@')
 
             # Create an empty array to store the sentences
@@ -37,14 +48,26 @@ class txtManager:
 
         return sentence_array
     
-    def getEvaluationList(num):
+    def getEvaluationList(num, type):
         evaluationList = []
         # Open the file in read mode
         for i in range(1, (num+1)):
-            path = f'./public/LintEvaluations/lintEvaluations{i}.txt'
+            path = f'./public/LintEvaluations/lintEvaluations{i}({type}).txt'
             with open(path, 'r') as file:
              # Read the entire file content as a string
                 file_content = file.read()
                 evaluationList.append(file_content)
                 
         return evaluationList
+    
+    def writeSummary(results, type):
+
+        path = f'./public/EvaluationSummary({type}).txt'
+        with open(path, "w") as file:
+            file.write("")
+
+        for result in results:
+            path = f'./public/EvaluationSummary({type}).txt'
+            with open(path, "a") as file:
+                file.write(result + "\n")
+    

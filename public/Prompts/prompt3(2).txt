@@ -1,0 +1,2 @@
+In python, for a given linked list of N nodes, check if it has a loop (the linked list can contain self-loop). 
+The response must conform with pythons PEP 8 standard. 

@@ -1,0 +1,33 @@
+For this piece of python code: 
+
+def check_duplicate_letters(sentence):
+    """
+    Check for duplicate letters in a sentence.
+
+    Parameters
+    ----------
+    sentence : str
+        Sentence to be checked.
+
+    Returns
+    -------
+    bool
+        True if sentence has any word with duplicate letters, else False.
+    """
+    words = sentence.split()
+    for word in words:
+        if len(word) != len(set(word)):
+            return True
+    return False
+. 
+
+Fix the known errors from the following list:
+
+************* Module response8(2)
+C0304 Final newline missing: convention:  21,0: :
+C0114 Missing module docstring: convention:   1,0: :
+C0103 Module name "response8(2)" doesn't conform to snake_case naming style: convention:   1,0: :
+
+------------------------------------------------------------------
+Your code has been rated at 5.00/10 (previous run: 5.00/10, +0.00)
+

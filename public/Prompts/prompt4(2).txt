@@ -1,0 +1,2 @@
+In python, For a given string S, write a function to check if it is a palindrome. Taking a single string as its parameter, your function should return True if the given string is a palindrome, else return False (A string is said to be a palindrome if it is the same when read backward). 
+The response must conform with pythons PEP 8 standard. 

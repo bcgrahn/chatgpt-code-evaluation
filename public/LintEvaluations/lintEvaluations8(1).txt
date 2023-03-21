@@ -1,0 +1,23 @@
+************* Module response8(1)
+C0303 Trailing whitespace: convention:   3,38: :
+C0303 Trailing whitespace: convention:   4,26: :
+W0311 Bad indentation. Found 2 spaces, expected 4: warning:   4,0: :
+C0303 Trailing whitespace: convention:   5,20: :
+W0311 Bad indentation. Found 2 spaces, expected 4: warning:   5,0: :
+C0303 Trailing whitespace: convention:   6,21: :
+W0311 Bad indentation. Found 4 spaces, expected 8: warning:   6,0: :
+C0303 Trailing whitespace: convention:   7,36: :
+W0311 Bad indentation. Found 6 spaces, expected 12: warning:   7,0: :
+C0303 Trailing whitespace: convention:   8,32: :
+W0311 Bad indentation. Found 8 spaces, expected 16: warning:   8,0: :
+C0303 Trailing whitespace: convention:   9,21: :
+W0311 Bad indentation. Found 10 spaces, expected 20: warning:   9,0: :
+C0304 Final newline missing: convention:  10,0: :
+W0311 Bad indentation. Found 2 spaces, expected 4: warning:  10,0: :
+C0114 Missing module docstring: convention:   1,0: :
+C0103 Module name "response8(1)" doesn't conform to snake_case naming style: convention:   1,0: :
+C0116 Missing function or method docstring: convention:   3,0: check_duplicate_letters:
+
+------------------------------------------------------------------
+Your code has been rated at 0.00/10 (previous run: 3.33/10, -3.33)
+

@@ -1,0 +1,30 @@
+For this piece of python code: 
+
+import socket
+
+def get_domain_name(ip_address):
+    """
+    Function to find the domain name from an IP address using PTR records.
+    
+    Parameters:
+    ip_address (str): The IP address to look up.
+    
+    Returns:
+    str: The domain name associated with the IP address.
+    """
+    try:
+        return socket.gethostbyaddr(ip_address)[0]
+    except socket.herror:
+        return None
+. 
+
+Fix the known errors from the following list:
+
+************* Module response11(2)
+C0304 Final newline missing: convention:  18,0: :
+C0114 Missing module docstring: convention:   1,0: :
+C0103 Module name "response11(2)" doesn't conform to snake_case naming style: convention:   1,0: :
+
+------------------------------------------------------------------
+Your code has been rated at 5.00/10 (previous run: 5.71/10, -0.71)
+

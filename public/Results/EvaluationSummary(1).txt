@@ -1,0 +1,37 @@
+Number: 12 Error: C0304 Final newline missing
+Number: 12 Error: C0114 Missing module docstring
+Number: 1 Error: C0103 Module name "response1(1)" doesn't conform to snake_case naming style
+Number: 12 Error: C0116 Missing function or method docstring
+Number: 1 Error: C0103 Variable name "c" doesn't conform to snake_case naming style
+Number: 24 Error: 
+
+Number: 12 Error: ------------------------------------------------------------------
+
+Number: 21 Error: W0311 Bad indentation. Found 2 spaces, expected 4
+Number: 9 Error: W0311 Bad indentation. Found 4 spaces, expected 8
+Number: 1 Error: C0103 Module name "response2(1)" doesn't conform to snake_case naming style
+Number: 2 Error: R1703 The if statement can be replaced with 'return bool(test)'
+Number: 3 Error: R1705 Unnecessary "else" after "return", remove the "else" and de-indent the code inside it
+Number: 2 Error: W0311 Bad indentation. Found 6 spaces, expected 12
+Number: 1 Error: C0103 Module name "response3(1)" doesn't conform to snake_case naming style
+Number: 33 Error: C0303 Trailing whitespace
+Number: 1 Error: C0325 Unnecessary parens after 'if' keyword
+Number: 1 Error: C0103 Module name "response4(1)" doesn't conform to snake_case naming style
+Number: 1 Error: C0103 Argument name "S" doesn't conform to snake_case naming style
+Number: 1 Error: W0621 Redefining name 'S' from outer scope (line 10)
+Number: 1 Error: C0103 Constant name "ans" doesn't conform to UPPER_CASE naming style
+Number: 1 Error: C0103 Module name "response5(1)" doesn't conform to snake_case naming style
+Number: 1 Error: C0200 Consider using enumerate instead of iterating with range and len
+Number: 1 Error: E0001 Parsing failed
+Number: 1 Error: C0103 Module name "response7(1)" doesn't conform to snake_case naming style
+Number: 1 Error: C0103 Module name "response8(1)" doesn't conform to snake_case naming style
+Number: 1 Error: C0103 Module name "response9(1)" doesn't conform to snake_case naming style
+Number: 1 Error: W0621 Redefining name 'message' from outer scope (line 42)
+Number: 1 Error: C0103 Module name "response10(1)" doesn't conform to snake_case naming style
+Number: 1 Error: C0415 Import outside toplevel (datetime)
+Number: 1 Error: C0103 Module name "response11(1)" doesn't conform to snake_case naming style
+Number: 1 Error: C0103 Module name "response12(1)" doesn't conform to snake_case naming style
+Number: 1 Error: C0103 Module name "response13(1)" doesn't conform to snake_case naming style
+
+---------------------
+Overall rating: 1.9229999999999996

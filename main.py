@@ -4,7 +4,6 @@ from src.CodeEvaluation import CodeEvaluation
 from src.dbprovider import dbprovider
 from src.txtManager import txtManager
 from dotenv import load_dotenv
-import src.TimeComplexity
 
 load_dotenv()
 
@@ -16,37 +15,64 @@ timeEvaluations = []
 breakdownEvaluations = []
 timeComplexities = []
 complexities = []
+evaluationSummary = []
 
+#Get prompts from txt file
 prompts = txtManager.getPromptList()
+i = len(prompts)
 
+#Itteration 1
+#------------------
+#ask chatGPT
 responses = Chatgpt.askGPT(prompts)
-
-#generate generic filename
-i = 0
-for prompt in prompts:
-    i = i + 1
-    #create file names for each response
-    fileName = f"response{i}.py"
-    fileNames.append(fileName)
-    
-
 #write responses to txt file
-txtManager.writeResponses(responses)
+txtManager.writeResponses(responses, 1)
+txtManager.writePrompts(prompts, 1)
 #create python scripts from all the responses
-PythonFile.create(responses, fileNames)
-
-#Evaluate python pep* conformaty
-CodeEvaluation.evaluateLint(fileNames)
-lint_evaluations = txtManager.getEvaluationList(i)
-timeEvaluations = CodeEvaluation.timeEvaluate(fileNames)
-#breakdownEvaluations = CodeEvaluation.analyze_code(fileNames)
-#timeComplexities = CodeEvaluation.timeComplexity(fileNames)
-#complexities = CodeEvaluation.complexity(fileNames)
-#src.TimeComplexity.measure_time_complexity(fileNames)
-
+PythonFile.create(responses, 1)
+#Evaluate python pep8 conformaty
+CodeEvaluation.evaluateLint(i, 1)
+lint_evaluations = txtManager.getEvaluationList(i, 1)
+evaluationSummary = CodeEvaluation.countCode(i, 1)
+txtManager.writeSummary(evaluationSummary, 1)
 #Write results to database
-dbprovider.start(prompts, responses, lint_evaluations)
+# dbprovider.start(prompts, responses, lint_evaluations)
 
-# txtManager.writeEvaluation()
+#Itteration 2
+#------------------
+#ask chatGPT
+newPrompts = []
+for prompt in prompts:
+    newPrompts.append(prompt + " \nThe response must conform with pythons PEP 8 standard. ")
+responses = Chatgpt.askGPT(newPrompts)
+#write responses to txt file
+txtManager.writeResponses(responses, 2)
+txtManager.writePrompts(newPrompts, 2)
+#create python scripts from all the responses
+PythonFile.create(responses, 2)
+#Evaluate python pep8 conformaty
+CodeEvaluation.evaluateLint(i, 2)
+lint_evaluations = txtManager.getEvaluationList(i, 2)
+evaluationSummary = CodeEvaluation.countCode(i, 2)
+txtManager.writeSummary(evaluationSummary, 2)
+
+#Itteration 3
+#------------------
+#ask chatGPT
+newNewPrompts = []
+for response, evaluation in zip(responses,lint_evaluations):
+    newNewPrompts.append("For this piece of python code: " + response + "\n. \n\nFix the known errors from the following list:\n\n" + evaluation)
+responses = Chatgpt.askGPT(newNewPrompts)
+#write responses to txt file
+txtManager.writeResponses(responses, 3)
+txtManager.writePrompts(newNewPrompts, 3)
+#create python scripts from all the responses
+PythonFile.create(responses, 3)
+#Evaluate python pep8 conformaty
+CodeEvaluation.evaluateLint(i, 3)
+lint_evaluations = txtManager.getEvaluationList(i, 3)
+evaluationSummary = CodeEvaluation.countCode(i, 3)
+txtManager.writeSummary(evaluationSummary, 3)
+
 
 

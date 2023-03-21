@@ -1,0 +1,12 @@
+************* Module response1(1)
+C0303 Trailing whitespace: convention:   3,23: :
+C0304 Final newline missing: convention:   4,0: :
+W0311 Bad indentation. Found 2 spaces, expected 4: warning:   4,0: :
+C0114 Missing module docstring: convention:   1,0: :
+C0103 Module name "response1(1)" doesn't conform to snake_case naming style: convention:   1,0: :
+C0116 Missing function or method docstring: convention:   3,0: format_number:
+C0209 Formatting a regular string which could be a f-string: convention:   4,9: format_number:
+
+------------------------------------------------------------------
+Your code has been rated at 0.00/10 (previous run: 0.00/10, +0.00)
+

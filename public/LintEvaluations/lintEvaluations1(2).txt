@@ -1,0 +1,9 @@
+************* Module response1(2)
+C0304 Final newline missing: convention:   5,0: :
+C0114 Missing module docstring: convention:   1,0: :
+C0103 Module name "response1(2)" doesn't conform to snake_case naming style: convention:   1,0: :
+C0209 Formatting a regular string which could be a f-string: convention:   5,11: format_number:
+
+------------------------------------------------------------------
+Your code has been rated at 0.00/10 (previous run: 0.00/10, +0.00)
+

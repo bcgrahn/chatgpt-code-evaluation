@@ -1,5 +1,4 @@
 import pyodbc
-
 class dbprovider:
 
     def start(prompts, responses, evaluations):
@@ -21,14 +20,11 @@ class dbprovider:
         except:
             print("[Table not deleted]")
 
-
+        #create new table
         cursor.execute("CREATE TABLE Data (ID INTEGER PRIMARY KEY, Prompt TEXT, Response TEXT, Evaluation TEXT)")
-       
         i = 1
         
         for prompt, response, evaluation, in zip(prompts, responses, evaluations):
-
-            # response = f"\"{response}\""
             # Insert data into the table
             query = f"INSERT INTO Data (ID, Prompt, Response, Evaluation) VALUES ('{i}', '{prompt}', '{response}', '{evaluation}')"
             

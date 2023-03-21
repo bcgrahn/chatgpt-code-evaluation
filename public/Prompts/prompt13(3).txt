@@ -1,0 +1,27 @@
+For this piece of python code: 
+
+def decimal_to_hex(string):
+    """Convert a string of ASCII characters to a hexadecimal string.
+
+    Args:
+        string (str): A string of ASCII characters.
+
+    Returns:
+        str: A string of hexadecimal characters separated by spaces.
+    """
+    hex_string = ""
+    for char in string:
+        hex_string += hex(ord(char))[2:].zfill(2) + " "
+    return hex_string.lower()
+. 
+
+Fix the known errors from the following list:
+
+************* Module response13(2)
+C0304 Final newline missing: convention:  15,0: :
+C0114 Missing module docstring: convention:   1,0: :
+C0103 Module name "response13(2)" doesn't conform to snake_case naming style: convention:   1,0: :
+
+------------------------------------------------------------------
+Your code has been rated at 4.00/10 (previous run: 4.00/10, +0.00)
+

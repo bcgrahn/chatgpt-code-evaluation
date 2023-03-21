@@ -1,9 +1,0 @@
-************* Module response13
-C0303: convention:   3,13: : Trailing whitespace 
-C0304: convention:   7,0: : Final newline missing 
-C0114: convention:   1,0: : Missing module docstring 
-C0116: convention:   5,0: find_domain_name: Missing function or method docstring 
-
------------------------------------
-Your code has been rated at 0.00/10
-

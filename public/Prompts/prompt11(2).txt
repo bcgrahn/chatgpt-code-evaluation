@@ -1,0 +1,2 @@
+In python, Write a function to find the domain name from the IP address. The function will accept an IP address, make a DNS request, and return the domain name that maps to that IP address while using records of PTR DNS. You can import the Python socket library. 
+The response must conform with pythons PEP 8 standard. 

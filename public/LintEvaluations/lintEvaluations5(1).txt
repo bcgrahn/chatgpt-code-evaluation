@@ -1,0 +1,15 @@
+************* Module response5(1)
+W0311 Bad indentation. Found 2 spaces, expected 4: warning:   4,0: :
+W0311 Bad indentation. Found 2 spaces, expected 4: warning:   5,0: :
+W0311 Bad indentation. Found 4 spaces, expected 8: warning:   6,0: :
+W0311 Bad indentation. Found 6 spaces, expected 12: warning:   7,0: :
+C0304 Final newline missing: convention:   8,0: :
+W0311 Bad indentation. Found 2 spaces, expected 4: warning:   8,0: :
+C0114 Missing module docstring: convention:   1,0: :
+C0103 Module name "response5(1)" doesn't conform to snake_case naming style: convention:   1,0: :
+C0116 Missing function or method docstring: convention:   3,0: capital_indexes:
+C0200 Consider using enumerate instead of iterating with range and len: convention:   5,2: capital_indexes:
+
+------------------------------------------------------------------
+Your code has been rated at 0.00/10 (previous run: 0.00/10, +0.00)
+
