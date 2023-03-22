@@ -1,7 +1,7 @@
 
 
-def triple_and(a, b, c):
-  if a and b and c:
-    return True
-  else:
-    return False
+def triple_and(param1, param2, param3):
+    if param1 and param2 and param3:
+        return True
+    else:
+        return False

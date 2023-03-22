@@ -3,17 +3,17 @@ import socket
 
 def get_domain_name(ip_address):
     """
-    Function to find the domain name from an IP address using PTR records.
+    This function takes an IP address and makes a DNS request to find the domain name that
+    maps to that IP address.
     
     Parameters:
-    ip_address (str): The IP address to look up.
+    ip_address (str): The IP address.
     
     Returns:
-    str: The domain name associated with the IP address.
+    str: The domain name that maps to the IP address.
     """
     try:
         return socket.gethostbyaddr(ip_address)[0]
     except socket.herror:
         return None
 
-# Added newline at the end of the file.

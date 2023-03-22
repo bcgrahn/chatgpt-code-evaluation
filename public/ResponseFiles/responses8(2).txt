@@ -1,21 +1,18 @@
 
 
-def check_duplicate_letters(sentence):
+def check_duplicate_letter(sentence):
     """
-    Check for duplicate letters in a sentence.
+    Function to check if a sentence has any word with duplicate letters
+    
+    Parameters:
+    sentence (str): Sentence to check for duplicate letters
 
-    Parameters
-    ----------
-    sentence : str
-        Sentence to be checked.
-
-    Returns
-    -------
-    bool
-        True if sentence has any word with duplicate letters, else False.
+    Returns:
+    bool: True if the sentence has any word with duplicate letters, else False
     """
     words = sentence.split()
     for word in words:
-        if len(word) != len(set(word)):
-            return True
+        for i in range(len(word)):
+            if word.count(word[i]) > 1:
+                return True
     return False

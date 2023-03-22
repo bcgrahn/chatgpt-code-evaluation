@@ -1,9 +1,10 @@
 ************* Module response11(1)
-C0304 Final newline missing: convention:  10,0: :
+C0303 Trailing whitespace: convention:   3,13: :
+C0304 Final newline missing: convention:   6,0: :
 C0114 Missing module docstring: convention:   1,0: :
 C0103 Module name "response11(1)" doesn't conform to snake_case naming style: convention:   1,0: :
-C0116 Missing function or method docstring: convention:   5,0: get_domain_name:
+C0116 Missing function or method docstring: convention:   5,0: find_domain_name:
 
 ------------------------------------------------------------------
-Your code has been rated at 4.29/10 (previous run: 0.00/10, +4.29)
+Your code has been rated at 0.00/10 (previous run: 0.00/10, +0.00)
 

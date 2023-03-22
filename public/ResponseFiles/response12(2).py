@@ -1,19 +1,22 @@
 
 
-def parse_string(encoded_str):
+def parse_string(encoded_string):
+    """Parse a string to return a dictionary with first name, last name, and id values.
+
+    Args:
+        encoded_string (str): Encoded string containing first name, last name, and id.
+
+    Returns:
+        dict: Dictionary with first name, last name, and id values.
     """
-    Parses an encoded string and returns a dictionary with the first name, last name, and id values.
-    :param encoded_str: The encoded string to be parsed.
-    :return: A dictionary with the first name, last name, and id values.
-    """
-    # Split string by zeros
-    split_str = encoded_str.split('0')
-    
-    # Create dictionary
-    response = {
-        "first_name": split_str[0],
-        "last_name": split_str[1],
-        "id": split_str[2]
+    # Split the string by zeros
+    split_string = encoded_string.split('0')
+
+    # Create the dictionary
+    parsed_string = {
+        'first_name': split_string[0],
+        'last_name': split_string[1],
+        'id': split_string[2]
     }
-    
-    return response
+
+    return parsed_string

@@ -1,14 +1,10 @@
 
 
-def triple_and(a, b, c):
-    """Returns True only if all parameters are True and False otherwise.
-
-    Args:
-        a: First boolean parameter.
-        b: Second boolean parameter.
-        c: Third boolean parameter.
-
-    Returns:
-        bool: True only if all parameters are True and False otherwise.
+def triple_and(param1, param2, param3):
     """
-    return a and b and c
+    Function that returns True only if all three parameters are True, False otherwise. 
+    """
+    if param1 and param2 and param3:
+        return True
+    else:
+        return False

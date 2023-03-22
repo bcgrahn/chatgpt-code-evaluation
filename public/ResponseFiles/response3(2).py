@@ -1,23 +1,21 @@
 
 
-def has_loop(head):
+def has_loop(list_head): 
     """
-    Checks if the given linked list has a loop.
-
-    Args:
-        head (Node): The head of the linked list.
-
+    Check if a linked list contains a loop
+    
+    Parameters:
+    list_head (Node): Head of the linked list
+    
     Returns:
-        bool: True if the linked list has a loop, False otherwise.
+    bool: True if the linked list contains a loop, False otherwise
     """
-    slow = head
-    fast = head
+    slow_ptr = list_head
+    fast_ptr = list_head
 
-    while fast is not None and fast.next is not None:
-        slow = slow.next
-        fast = fast.next.next
-
-        if slow == fast:
+    while fast_ptr and fast_ptr.next:
+        slow_ptr = slow_ptr.next
+        fast_ptr = fast_ptr.next.next
+        if slow_ptr == fast_ptr:
             return True
-
     return False

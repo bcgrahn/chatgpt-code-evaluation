@@ -1,83 +1,35 @@
 
 
-import string
-
-def morse_code_translator(input_string):
+def translate_to_morse(text):
     """
-    Function to translate a string to Morse code.
+    Translates a string to Morse code
     """
-    morse_code = {
-        'A': '.-',
-        'B': '-...',
-        'C': '-.-.',
-        'D': '-..',
-        'E': '.',
-        'F': '..-.',
-        'G': '--.',
-        'H': '....',
-        'I': '..',
-        'J': '.---',
-        'K': '-.-',
-        'L': '.-..',
-        'M': '--',
-        'N': '-.',
-        'O': '---',
-        'P': '.--.',
-        'Q': '--.-',
-        'R': '.-.',
-        'S': '...',
-        'T': '-',
-        'U': '..-',
-        'V': '...-',
-        'W': '.--',
-        'X': '-..-',
-        'Y': '-.--',
-        'Z': '--..',
-        '1': '.----',
-        '2': '..---',
-        '3': '...--',
-        '4': '....-',
-        '5': '.....',
-        '6': '-....',
-        '7': '--...',
-        '8': '---..',
-        '9': '----.',
-        '0': '-----',
-        ',': '--..--',
-        '.': '.-.-.-',
-        '?': '..--..',
-        "'": '.----.',
-        '!': '-.-.--',
-        '/': '-..-.',
-        '(': '-.--.',
-        ')': '-.--.-',
-        '&': '.-...',
-        ':': '---...',
-        ';': '-.-.-.',
-        '=': '-...-',
-        '+': '.-.-.',
-        '-': '-....-',
-        '_': '..--.-',
-        '"': '.-..-.',
-        '$': '...-..-',
-        '@': '.--.-.'
-    }
-
-    output_string = ''
-
-    for character in input_string.upper():
-        if character in string.ascii_uppercase:
-            output_string += morse_code[character] + ' '
-        elif character in string.digits:
-            output_string += morse_code[character] + ' '
-        elif character in morse_code:
-            output_string += morse_code[character] + ' '
-        else:
-            output_string += character
-
-    return output_string.strip()
-
-# Test code
-print(morse_code_translator("Hello World"))
-print(morse_code_translator("SOS"))
-print(morse_code_translator("I love Python!"))
+    # Create a dictionary with the Morse code
+    MORSE_CODE_DICT = { 'A':'.-', 'B':'-...', 
+                    'C':'-.-.', 'D':'-..', 'E':'.', 
+                    'F':'..-.', 'G':'--.', 'H':'....', 
+                    'I':'..', 'J':'.---', 'K':'-.-', 
+                    'L':'.-..', 'M':'--', 'N':'-.', 
+                    'O':'---', 'P':'.--.', 'Q':'--.-', 
+                    'R':'.-.', 'S':'...', 'T':'-', 
+                    'U':'..-', 'V':'...-', 'W':'.--', 
+                    'X':'-..-', 'Y':'-.--', 'Z':'--..', 
+                    '1':'.----', '2':'..---', '3':'...--', 
+                    '4':'....-', '5':'.....', '6':'-....', 
+                    '7':'--...', '8':'---..', '9':'----.', 
+                    '0':'-----', ', ':'--..--', '.':'.-.-.-', 
+                    '?':'..--..', '/':'-..-.', '-':'-....-', 
+                    '(':'-.--.', ')':'-.--.-', ' ':' '} 
+  
+    # Initialize an empty string
+    morse_code = ""
+  
+    # Iterate over the text
+    for char in text:
+        # Check if the character is in the dictionary
+        if char in MORSE_CODE_DICT:
+            # Add the morse code of the character to the string
+            morse_code += MORSE_CODE_DICT[char] + " "
+  
+    # Return the string
+    return morse_code

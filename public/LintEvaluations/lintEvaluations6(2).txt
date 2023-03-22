@@ -1,8 +1,8 @@
 ************* Module response6(2)
-C0304 Final newline missing: convention:  12,0: :
+C0304 Final newline missing: convention:  14,0: :
 C0114 Missing module docstring: convention:   1,0: :
 C0103 Module name "response6(2)" doesn't conform to snake_case naming style: convention:   1,0: :
 
 ------------------------------------------------------------------
-Your code has been rated at 4.00/10 (previous run: 0.00/10, +4.00)
+Your code has been rated at 0.00/10 (previous run: 0.00/10, +0.00)
 

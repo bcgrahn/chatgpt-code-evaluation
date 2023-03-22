@@ -1,33 +1,34 @@
 For this piece of python code: 
 
-def parse_string(encoded_str):
+def parse_string(encoded_string):
+    """Parse a string to return a dictionary with first name, last name, and id values.
+
+    Args:
+        encoded_string (str): Encoded string containing first name, last name, and id.
+
+    Returns:
+        dict: Dictionary with first name, last name, and id values.
     """
-    Parses an encoded string and returns a dictionary with the first name, last name, and id values.
-    :param encoded_str: The encoded string to be parsed.
-    :return: A dictionary with the first name, last name, and id values.
-    """
-    # Split string by zeros
-    split_str = encoded_str.split('0')
-    
-    # Create dictionary
-    response = {
-        "first_name": split_str[0],
-        "last_name": split_str[1],
-        "id": split_str[2]
+    # Split the string by zeros
+    split_string = encoded_string.split('0')
+
+    # Create the dictionary
+    parsed_string = {
+        'first_name': split_string[0],
+        'last_name': split_string[1],
+        'id': split_string[2]
     }
-    
-    return response
+
+    return parsed_string
 . 
 
 Fix the known errors from the following list:
 
 ************* Module response12(2)
-C0303 Trailing whitespace: convention:  11,0: :
-C0303 Trailing whitespace: convention:  18,0: :
-C0304 Final newline missing: convention:  19,0: :
+C0304 Final newline missing: convention:  22,0: :
 C0114 Missing module docstring: convention:   1,0: :
 C0103 Module name "response12(2)" doesn't conform to snake_case naming style: convention:   1,0: :
 
 ------------------------------------------------------------------
-Your code has been rated at 0.00/10 (previous run: 0.00/10, +0.00)
+Your code has been rated at 2.50/10 (previous run: 2.50/10, +0.00)
 

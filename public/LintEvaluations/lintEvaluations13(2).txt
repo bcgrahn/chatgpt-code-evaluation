@@ -1,5 +1,5 @@
 ************* Module response13(2)
-C0304 Final newline missing: convention:  15,0: :
+C0304 Final newline missing: convention:  20,0: :
 C0114 Missing module docstring: convention:   1,0: :
 C0103 Module name "response13(2)" doesn't conform to snake_case naming style: convention:   1,0: :
 

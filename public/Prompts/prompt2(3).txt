@@ -1,28 +1,23 @@
 For this piece of python code: 
 
-def triple_and(a, b, c):
-    """Returns True only if all parameters are True and False otherwise.
-
-    Args:
-        a: First boolean parameter.
-        b: Second boolean parameter.
-        c: Third boolean parameter.
-
-    Returns:
-        bool: True only if all parameters are True and False otherwise.
+def triple_and(param1, param2, param3):
     """
-    return a and b and c
+    Function that returns True only if all three parameters are True, False otherwise. 
+    """
+    if param1 and param2 and param3:
+        return True
+    else:
+        return False
 . 
 
 Fix the known errors from the following list:
 
 ************* Module response2(2)
-C0304 Final newline missing: convention:  14,0: :
+C0304 Final newline missing: convention:  10,0: :
 C0114 Missing module docstring: convention:   1,0: :
 C0103 Module name "response2(2)" doesn't conform to snake_case naming style: convention:   1,0: :
-C0103 Argument name "a" doesn't conform to snake_case naming style: convention:   3,15: triple_and:
-C0103 Argument name "b" doesn't conform to snake_case naming style: convention:   3,18: triple_and:
-C0103 Argument name "c" doesn't conform to snake_case naming style: convention:   3,21: triple_and:
+R1703 The if statement can be replaced with 'return bool(test)': refactor:   7,4: triple_and:
+R1705 Unnecessary "else" after "return", remove the "else" and de-indent the code inside it: refactor:   7,4: triple_and:
 
 ------------------------------------------------------------------
 Your code has been rated at 0.00/10 (previous run: 0.00/10, +0.00)

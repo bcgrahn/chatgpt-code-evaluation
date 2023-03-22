@@ -1,4 +1,22 @@
 
 
 def format_number(num):
-    return "{:,}".format(num)
+    # convert number to string
+    num_str = str(num)
+    # create list of numbers
+    num_list = list(num_str)
+    # reverse list
+    num_list.reverse()
+    # create new list to store formatted number
+    formatted_num = []
+    # loop through each number in num_list
+    for i, num in enumerate(num_list):
+        # add number to new list
+        formatted_num.append(num)
+        # add comma after every third number
+        if (i + 1) % 3 == 0 and i != len(num_list) - 1:
+            formatted_num.append(',')
+    # reverse list
+    formatted_num.reverse()
+    # join list into string
+    return ''.join(formatted_num)

@@ -1,8 +1,8 @@
 ************* Module response11(3)
-C0304 Final newline missing: convention:  19,0: :
+C0305 Trailing newlines: convention:  19,0: :
 C0114 Missing module docstring: convention:   1,0: :
 C0103 Module name "response11(3)" doesn't conform to snake_case naming style: convention:   1,0: :
 
 ------------------------------------------------------------------
-Your code has been rated at 5.00/10 (previous run: 5.71/10, -0.71)
+Your code has been rated at 5.00/10 (previous run: 5.00/10, +0.00)
 

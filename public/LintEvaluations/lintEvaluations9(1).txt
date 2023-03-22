@@ -1,9 +1,32 @@
 ************* Module response9(1)
-C0304 Final newline missing: convention:  55,0: :
+C0303 Trailing whitespace: convention:   3,23: :
+C0303 Trailing whitespace: convention:   4,41: :
+C0303 Trailing whitespace: convention:  20,32: :
+C0303 Trailing whitespace: convention:  21,35: :
+C0303 Trailing whitespace: convention:  22,21: :
+C0303 Trailing whitespace: convention:  23,15: :
+C0303 Trailing whitespace: convention:  24,26: :
+C0303 Trailing whitespace: convention:  25,25: :
+C0303 Trailing whitespace: convention:  26,0: :
+C0303 Trailing whitespace: convention:  27,50: :
+C0303 Trailing whitespace: convention:  28,39: :
+C0303 Trailing whitespace: convention:  29,44: :
+C0303 Trailing whitespace: convention:  30,50: :
+C0303 Trailing whitespace: convention:  32,13: :
+C0303 Trailing whitespace: convention:  33,52: :
+C0303 Trailing whitespace: convention:  34,45: :
+C0303 Trailing whitespace: convention:  36,0: :
+C0303 Trailing whitespace: convention:  37,17: :
+C0303 Trailing whitespace: convention:  38,0: :
+C0303 Trailing whitespace: convention:  39,13: :
+C0303 Trailing whitespace: convention:  40,26: :
+C0303 Trailing whitespace: convention:  42,37: :
+C0304 Final newline missing: convention:  43,0: :
 C0114 Missing module docstring: convention:   1,0: :
 C0103 Module name "response9(1)" doesn't conform to snake_case naming style: convention:   1,0: :
-C0116 Missing function or method docstring: convention:  48,0: morse_translator:
+C0116 Missing function or method docstring: convention:  22,0: encrypt:
+W0621 Redefining name 'message' from outer scope (line 41): warning:  22,12: encrypt:
 
 ------------------------------------------------------------------
-Your code has been rated at 5.00/10 (previous run: 0.00/10, +5.00)
+Your code has been rated at 0.00/10 (previous run: 0.00/10, +0.00)
 

@@ -63,7 +63,9 @@ class CodeEvaluation:
                     words = line.split(':')
                     if words:
                         # Get the first word of the line
-                        first_word = words[0]
+                        regex = r'"(?:[^"\\]|\\.)*"|\'(?:[^\'\\]|\\.)*\''
+                        first_word = re.sub(regex, '{variable}', words[0])
+            
                         #exclude certain phrases
                         if not re.search(pattern, first_word):
                             # Count the number of occurrences of the word
@@ -92,4 +94,6 @@ class CodeEvaluation:
         overall_rating = f'\n---------------------\nOverall rating: {total}'
         summary.append(overall_rating)
         return summary
+    
+    
         

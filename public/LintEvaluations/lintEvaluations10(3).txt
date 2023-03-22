@@ -1,9 +1,9 @@
 ************* Module response10(3)
-C0304 Final newline missing: convention:   6,0: :
+C0304 Final newline missing: convention:  20,0: :
 C0114 Missing module docstring: convention:   1,0: :
 C0103 Module name "response10(3)" doesn't conform to snake_case naming style: convention:   1,0: :
-C0415 Import outside toplevel (datetime.date): convention:   4,4: thirteenth_friday:
+C0415 Import outside toplevel (datetime.date): convention:  18,4: thirteenth_friday:
 
 ------------------------------------------------------------------
-Your code has been rated at 0.00/10 (previous run: 0.00/10, +0.00)
+Your code has been rated at 0.00/10 (previous run: 3.33/10, -3.33)
 

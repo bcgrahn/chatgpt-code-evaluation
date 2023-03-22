@@ -1,8 +1,9 @@
 ************* Module response3(2)
-C0304 Final newline missing: convention:  23,0: :
+C0303 Trailing whitespace: convention:   3,24: :
+C0304 Final newline missing: convention:  21,0: :
 C0114 Missing module docstring: convention:   1,0: :
 C0103 Module name "response3(2)" doesn't conform to snake_case naming style: convention:   1,0: :
 
 ------------------------------------------------------------------
-Your code has been rated at 6.67/10 (previous run: 0.00/10, +6.67)
+Your code has been rated at 5.56/10 (previous run: 6.67/10, -1.11)
 

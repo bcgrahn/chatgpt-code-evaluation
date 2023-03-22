@@ -1,7 +1,8 @@
 ************* Module response1(3)
-C0304 Final newline missing: convention:   4,0: :
+C0304 Final newline missing: convention:  11,0: :
 C0114 Missing module docstring: convention:   1,0: :
 C0103 Module name "response1(3)" doesn't conform to snake_case naming style: convention:   1,0: :
+E0102 function already defined line 2: error:   7,0: format_number:
 
 ------------------------------------------------------------------
 Your code has been rated at 0.00/10 (previous run: 0.00/10, +0.00)

@@ -1,29 +1,39 @@
 For this piece of python code: 
 
 def thirteenth_friday(month, year):
-    """
-    Detects if a month contains a Friday with the 13th
-    :param month: Month in number
-    :param year: Year in four digits
-    :return: True if month contains a Friday with the 13th, else False
-    """
-    from datetime import date
-    thirteenth_day = date(year, month, 13)
-    if thirteenth_day.strftime('%A') == 'Friday':
-        return True
-    else:
-        return False
+  """
+  Detects if a month contains a Friday on the 13th.
+  
+  Parameters
+  ----------
+  month : int
+    The number indicating the month.
+  year : int
+    The year in four digits.
+  
+  Returns
+  -------
+  bool
+    True if the month contains a Friday with the 13th, else False.
+  """
+  from datetime import date 
+  day = date(year, month, 13) 
+  return day.strftime("%A") == 'Friday'
 . 
 
 Fix the known errors from the following list:
 
 ************* Module response10(2)
-C0304 Final newline missing: convention:  15,0: :
+W0311 Bad indentation. Found 2 spaces, expected 4: warning:   4,0: :
+C0303 Trailing whitespace: convention:  19,27: :
+W0311 Bad indentation. Found 2 spaces, expected 4: warning:  19,0: :
+C0303 Trailing whitespace: convention:  20,29: :
+W0311 Bad indentation. Found 2 spaces, expected 4: warning:  20,0: :
+C0304 Final newline missing: convention:  21,0: :
+W0311 Bad indentation. Found 2 spaces, expected 4: warning:  21,0: :
 C0114 Missing module docstring: convention:   1,0: :
 C0103 Module name "response10(2)" doesn't conform to snake_case naming style: convention:   1,0: :
-C0415 Import outside toplevel (datetime.date): convention:  10,4: thirteenth_friday:
-R1703 The if statement can be replaced with 'return bool(test)': refactor:  12,4: thirteenth_friday:
-R1705 Unnecessary "else" after "return", remove the "else" and de-indent the code inside it: refactor:  12,4: thirteenth_friday:
+C0415 Import outside toplevel (datetime.date): convention:  19,2: thirteenth_friday:
 
 ------------------------------------------------------------------
 Your code has been rated at 0.00/10 (previous run: 0.00/10, +0.00)

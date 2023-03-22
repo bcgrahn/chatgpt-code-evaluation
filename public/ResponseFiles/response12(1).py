@@ -1,26 +1,15 @@
 
 
 def parse_string(encoded_string):
-  # Split the string by any number of zeros
-  split_string = encoded_string.split('0')
-  
-  # Get the first name
-  first_name = split_string[0]
-  
-  # Get the last name
-  last_name = split_string[1]
-  
-  # Get the id
-  id = split_string[-1]
-  
-  # Create a dictionary
-  parsed_dict = {
-    "first_name": first_name,
-    "last_name": last_name,
-    "id": id
-  }
-  
-  # Return the dictionary
-  return parsed_dict
-
-print(parse_string("John000Doe000123"))
+    # Split the string by zeros
+    split_string = encoded_string.split('0')
+    # Create a dictionary to store the values
+    output_dict = {}
+    # Store the first name
+    output_dict["first_name"] = split_string[0]
+    # Store the last name
+    output_dict["last_name"] = split_string[1]
+    # Store the id
+    output_dict["id"] = split_string[2]
+    # Return the dictionary
+    return output_dict

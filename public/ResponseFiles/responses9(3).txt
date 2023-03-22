@@ -1,11 +1,10 @@
 
-import string
 
-def morse_code_translator(input_string):
-    """
-    Function to translate a string to Morse code.
-    """
-    morse_code = {
+def translate_to_morse(text):
+    """Translates a string to Morse code."""
+
+    # Create a dictionary with the Morse code
+    morse_code_dict = {
         'A': '.-',
         'B': '-...',
         'C': '-.-.',
@@ -42,41 +41,25 @@ def morse_code_translator(input_string):
         '8': '---..',
         '9': '----.',
         '0': '-----',
-        ',': '--..--',
+        ', ': '--..--',
         '.': '.-.-.-',
         '?': '..--..',
-        "'": '.----.',
-        '!': '-.-.--',
         '/': '-..-.',
+        '-': '-....-',
         '(': '-.--.',
         ')': '-.--.-',
-        '&': '.-...',
-        ':': '---...',
-        ';': '-.-.-.',
-        '=': '-...-',
-        '+': '.-.-.',
-        '-': '-....-',
-        '_': '..--.-',
-        '"': '.-..-.',
-        '$': '...-..-',
-        '@': '.--.-.'
+        ' ': ' '
     }
 
-    output_string = ''
+    # Initialize an empty string
+    morse_code = ""
 
-    for character in input_string.upper():
-        if character in string.ascii_uppercase:
-            output_string += morse_code[character] + ' '
-        elif character in string.digits:
-            output_string += morse_code[character] + ' '
-        elif character in morse_code:
-            output_string += morse_code[character] + ' '
-        else:
-            output_string += character
+    # Iterate over the text
+    for char in text:
+        # Check if the character is in the dictionary
+        if char in morse_code_dict:
+            # Add the morse code of the character to the string
+            morse_code += morse_code_dict[char] + " "
 
-    return output_string.strip()
-
-# Test code
-print(morse_code_translator("Hello World"))
-print(morse_code_translator("SOS"))
-print(morse_code_translator("I love Python!"))
+    # Return the string
+    return morse_code

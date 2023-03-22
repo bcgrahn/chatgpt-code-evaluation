@@ -1,22 +1,9 @@
 ************* Module response12(1)
-W0311 Bad indentation. Found 2 spaces, expected 4: warning:   5,0: :
-C0303 Trailing whitespace: convention:   6,0: :
-W0311 Bad indentation. Found 2 spaces, expected 4: warning:   8,0: :
-C0303 Trailing whitespace: convention:   9,0: :
-W0311 Bad indentation. Found 2 spaces, expected 4: warning:  11,0: :
-C0303 Trailing whitespace: convention:  12,0: :
-W0311 Bad indentation. Found 2 spaces, expected 4: warning:  14,0: :
-C0303 Trailing whitespace: convention:  15,0: :
-W0311 Bad indentation. Found 2 spaces, expected 4: warning:  17,0: :
-C0303 Trailing whitespace: convention:  22,0: :
-W0311 Bad indentation. Found 2 spaces, expected 4: warning:  24,0: :
-C0304 Final newline missing: convention:  26,0: :
+C0304 Final newline missing: convention:  15,0: :
 C0114 Missing module docstring: convention:   1,0: :
 C0103 Module name "response12(1)" doesn't conform to snake_case naming style: convention:   1,0: :
 C0116 Missing function or method docstring: convention:   3,0: parse_string:
-W0622 Redefining built-in 'id': warning:  14,2: parse_string:
-C0103 Variable name "id" doesn't conform to snake_case naming style: convention:  14,2: parse_string:
 
 ------------------------------------------------------------------
-Your code has been rated at 0.00/10 (previous run: 0.00/10, +0.00)
+Your code has been rated at 4.29/10 (previous run: 2.00/10, +2.29)
 

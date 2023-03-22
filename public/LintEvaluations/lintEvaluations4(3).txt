@@ -1,2 +1,8 @@
 ************* Module response4(3)
-E0001 Parsing failed: 'invalid syntax (<unknown>, line 18)': error:  18,67: :
+C0114 Missing module docstring: convention:   1,0: :
+C0103 Module name "response4(3)" doesn't conform to snake_case naming style: convention:   1,0: :
+C0103 Argument name "s" doesn't conform to snake_case naming style: convention:   2,18: is_palindrome:
+
+------------------------------------------------------------------
+Your code has been rated at 0.00/10 (previous run: 0.00/10, +0.00)
+

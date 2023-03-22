@@ -1,11 +1,12 @@
 
 def format_number(number):
-    """Convert a non-negative number to a string with commas as a thousands separator.
+    """Converts a non-negative number to a string with commas as thousands separators.
 
     Args:
         number (int): A non-negative number.
 
     Returns:
-        str: The number as a string with commas as a thousands separator.
+        str: A string representation of the number with commas as thousands separators.
     """
+
     return f"{number:,}"

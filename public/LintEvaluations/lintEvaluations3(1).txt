@@ -1,2 +1,14 @@
 ************* Module response3(1)
-E0001 Parsing failed: 'invalid syntax (<unknown>, line 3)': error:   3,10: :
+C0303 Trailing whitespace: convention:   3,22: :
+C0303 Trailing whitespace: convention:   4,17: :
+C0303 Trailing whitespace: convention:   5,17: :
+C0303 Trailing whitespace: convention:   6,45: :
+C0303 Trailing whitespace: convention:   9,28: :
+C0304 Final newline missing: convention:  11,0: :
+C0114 Missing module docstring: convention:   1,0: :
+C0103 Module name "response3(1)" doesn't conform to snake_case naming style: convention:   1,0: :
+C0116 Missing function or method docstring: convention:   3,0: detect_loop:
+
+------------------------------------------------------------------
+Your code has been rated at 0.00/10 (previous run: 6.36/10, -6.36)
+

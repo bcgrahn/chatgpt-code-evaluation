@@ -1,8 +1,13 @@
 ************* Module response9(2)
-C0304 Final newline missing: convention:  83,0: :
+C0303 Trailing whitespace: convention:   8,45: :
+C0303 Trailing whitespace: convention:  23,0: :
+C0303 Trailing whitespace: convention:  26,0: :
+C0303 Trailing whitespace: convention:  33,0: :
+C0304 Final newline missing: convention:  35,0: :
 C0114 Missing module docstring: convention:   1,0: :
 C0103 Module name "response9(2)" doesn't conform to snake_case naming style: convention:   1,0: :
+C0103 Variable name "MORSE_CODE_DICT" doesn't conform to snake_case naming style: convention:   8,4: translate_to_morse:
 
 ------------------------------------------------------------------
-Your code has been rated at 8.12/10 (previous run: 0.00/10, +8.12)
+Your code has been rated at 0.00/10 (previous run: 0.00/10, +0.00)
 

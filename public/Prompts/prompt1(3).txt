@@ -1,8 +1,8 @@
 For this piece of python code: 
 
 def format_number(number):
-    """Convert a non-negative number to a string with thousand separators."""
-    return "{:,}".format(number)
+    """Convert a non-negative number to a string and add commas as thousand separators."""
+    return f"{number:,}"
 . 
 
 Fix the known errors from the following list:
@@ -11,7 +11,6 @@ Fix the known errors from the following list:
 C0304 Final newline missing: convention:   5,0: :
 C0114 Missing module docstring: convention:   1,0: :
 C0103 Module name "response1(2)" doesn't conform to snake_case naming style: convention:   1,0: :
-C0209 Formatting a regular string which could be a f-string: convention:   5,11: format_number:
 
 ------------------------------------------------------------------
 Your code has been rated at 0.00/10 (previous run: 0.00/10, +0.00)

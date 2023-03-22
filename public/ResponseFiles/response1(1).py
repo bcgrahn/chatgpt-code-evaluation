@@ -1,4 +1,4 @@
 
 
-def format_number(num): 
-  return "{:,}".format(num)
+def format_number(number):
+    return "{:,}".format(number)

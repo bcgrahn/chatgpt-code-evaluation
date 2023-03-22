@@ -1,19 +1,9 @@
 ************* Module response13(1)
-W0311 Bad indentation. Found 2 spaces, expected 4: warning:   5,0: :
-C0303 Trailing whitespace: convention:   6,0: :
-W0311 Bad indentation. Found 2 spaces, expected 4: warning:   8,0: :
-W0311 Bad indentation. Found 4 spaces, expected 8: warning:  10,0: :
-C0303 Trailing whitespace: convention:  11,0: :
-W0311 Bad indentation. Found 4 spaces, expected 8: warning:  13,0: :
-C0303 Trailing whitespace: convention:  14,0: :
-W0311 Bad indentation. Found 4 spaces, expected 8: warning:  16,0: :
-C0303 Trailing whitespace: convention:  17,0: :
-C0304 Final newline missing: convention:  19,0: :
-W0311 Bad indentation. Found 2 spaces, expected 4: warning:  19,0: :
+C0304 Final newline missing: convention:   7,0: :
 C0114 Missing module docstring: convention:   1,0: :
 C0103 Module name "response13(1)" doesn't conform to snake_case naming style: convention:   1,0: :
 C0116 Missing function or method docstring: convention:   3,0: dec_to_hex:
 
 ------------------------------------------------------------------
-Your code has been rated at 0.00/10 (previous run: 0.00/10, +0.00)
+Your code has been rated at 2.00/10 (previous run: 1.67/10, +0.33)
 

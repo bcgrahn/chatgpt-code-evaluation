@@ -1,29 +1,19 @@
 
-def decimal_to_hex(string):
-    """Convert a string of ASCII characters to a hexadecimal string.
-
-    Args:
-        string (str): A string of ASCII characters.
-
-    Returns:
-        str: A string of hexadecimal characters separated by spaces.
+def decimal_to_hex(decimal_string):
     """
-    hex_string = ""
-    for char in string:
-        hex_string += hex(ord(char))[2:].zfill(2) + " "
-    return hex_string.lower()
-
-# Fixing errors
-def decimal_to_hex_2(string):
-    """Convert a string of ASCII characters to a hexadecimal string.
-
-    Args:
-        string (str): A string of ASCII characters.
-
-    Returns:
-        str: A string of hexadecimal characters separated by spaces.
+    Converts a decimal string to a hexadecimal string.
+    
+    Parameters
+    ----------
+    decimal_string : str
+        A string of ASCII characters.
+        
+    Returns
+    -------
+    hex_string : str
+        A string of hexadecimal characters.
     """
-    hex_string = ""
-    for char in string:
-        hex_string += hex(ord(char))[2:].zfill(2) + " "
-    return hex_string.lower()
+    hex_string = ''
+    for char in decimal_string:
+        hex_string += format(ord(char), 'x').lower() + ' '
+    return hex_string.strip()

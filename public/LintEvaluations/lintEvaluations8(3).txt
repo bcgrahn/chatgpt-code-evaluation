@@ -1,8 +1,9 @@
 ************* Module response8(3)
-C0304 Final newline missing: convention:  20,0: :
+C0304 Final newline missing: convention:  17,0: :
 C0114 Missing module docstring: convention:   1,0: :
 C0103 Module name "response8(3)" doesn't conform to snake_case naming style: convention:   1,0: :
+W0612 Unused variable 'i': warning:  14,12: check_duplicate_letter:
 
 ------------------------------------------------------------------
-Your code has been rated at 5.00/10 (previous run: 5.00/10, +0.00)
+Your code has been rated at 4.29/10 (previous run: 6.67/10, -2.38)
 

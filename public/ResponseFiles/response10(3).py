@@ -1,6 +1,20 @@
 
 def thirteenth_friday(month, year):
-    """Detects if a month contains a Friday with the 13th"""
+    """
+    Detects if a month contains a Friday on the 13th.
+
+    Parameters
+    ----------
+    month : int
+        The number indicating the month.
+    year : int
+        The year in four digits.
+
+    Returns
+    -------
+    bool
+        True if the month contains a Friday with the 13th, else False.
+    """
     from datetime import date
-    thirteenth_day = date(year, month, 13)
-    return bool(thirteenth_day.strftime('%A') == 'Friday')
+    day = date(year, month, 13)
+    return day.strftime("%A") == 'Friday'

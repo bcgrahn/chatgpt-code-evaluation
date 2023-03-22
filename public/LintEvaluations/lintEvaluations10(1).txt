@@ -1,11 +1,18 @@
 ************* Module response10(1)
-C0304 Final newline missing: convention:   8,0: :
+W0311 Bad indentation. Found 2 spaces, expected 4: warning:   4,0: :
+W0311 Bad indentation. Found 2 spaces, expected 4: warning:   5,0: :
+W0311 Bad indentation. Found 2 spaces, expected 4: warning:   6,0: :
+W0311 Bad indentation. Found 4 spaces, expected 8: warning:   7,0: :
+W0311 Bad indentation. Found 2 spaces, expected 4: warning:   8,0: :
+C0304 Final newline missing: convention:   9,0: :
+W0311 Bad indentation. Found 4 spaces, expected 8: warning:   9,0: :
 C0114 Missing module docstring: convention:   1,0: :
 C0103 Module name "response10(1)" doesn't conform to snake_case naming style: convention:   1,0: :
-C0116 Missing function or method docstring: convention:   3,0: detect_13th_Friday:
-C0103 Function name "detect_13th_Friday" doesn't conform to snake_case naming style: convention:   3,0: detect_13th_Friday:
-C0415 Import outside toplevel (datetime.date): convention:   4,4: detect_13th_Friday:
+C0116 Missing function or method docstring: convention:   3,0: detect_13th_friday:
+C0415 Import outside toplevel (datetime.date): convention:   4,2: detect_13th_friday:
+R1703 The if statement can be replaced with 'return bool(test)': refactor:   6,2: detect_13th_friday:
+R1705 Unnecessary "else" after "return", remove the "else" and de-indent the code inside it: refactor:   6,2: detect_13th_friday:
 
 ------------------------------------------------------------------
-Your code has been rated at 0.00/10 (previous run: 1.43/10, -1.43)
+Your code has been rated at 0.00/10 (previous run: 0.00/10, +0.00)
 
