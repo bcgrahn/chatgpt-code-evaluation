@@ -4,6 +4,9 @@ These findings contribute to ongoing endeavors aimed at enhancing the reliabilit
 
 ## Run instructions:
 cd python-chatgpt
+
 myenv\Scripts\activate
+
 python -m unittest test 
+
 python main.py
