@@ -3,6 +3,7 @@ This study delves into CHATGPT's proficiency in producing Python code that align
 These findings contribute to ongoing endeavors aimed at enhancing the reliability and safety of AI-generated code, underscoring the significance of prompt refinement and adherence to coding standards within AI code generation.
 
 ## Run instructions:
-- cd python-chatgpt\myenv\Scripts\activate
+- cd python-chatgpt
+- myenv\Scripts\activate
 - python -m unittest test 
 - python main.py
